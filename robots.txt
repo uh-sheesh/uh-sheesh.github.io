@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /phase2/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.uh-sheesh.com/sitemap.xml
