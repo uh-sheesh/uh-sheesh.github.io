@@ -752,3 +752,25 @@ footer p {
 	padding-left: 2em !important;
 	font-weight: 500;
 }
+
+
+/* PHASE II Styles */
+
+.btn-mc {
+	color: black;
+	background-color: white;
+	border-color: #001a28;
+	margin-bottom: 10px;
+}
+
+.btn-mc:hover {
+	color: white !important;
+	background-color: grey !important;
+	border-color: #001a28 !important;
+}
+
+.btn-mc.active {
+	color: white !important;
+	background-color: black;
+	border-color: #001a28 !important;
+}
