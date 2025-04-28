@@ -1,4 +1,4 @@
-<!doctype html> 
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<!-- Required meta tags --> 
@@ -6,399 +6,713 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Hi! My name is Ashish! I am a PhD student in IT in the College of Engineering and Computing at George Mason University.">
 		<meta name="author" content="Ashish Hingle">
-		<!-- Bootstrap CSS --> 
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-		<!-- Import Google Fonts --> 
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-		<!-- Font Awesome --> <script src="https://kit.fontawesome.com/c14b6bdada.js" crossorigin="anonymous"></script> <!-- Favicon's for multiple screen sizes --> 
+		<title>Ashish Hingle - Portfolio and Projects</title>
+		<!-- Favicon's for multiple screen sizes --> 
 		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 		<link rel="manifest" href="img/favicon/site.webmanifest">
-		<title>Ashish Hingle, PhD Student in Information Technology</title>
-		<!-- Custom styles for this template --> 
-		<link href="css/mycss.css" rel="stylesheet">
+		<!-- Font Awesome icons (free version)-->
+		<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+		<!-- Google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+		<!-- Core theme CSS (includes Bootstrap)-->
+		<link href="css/uhsheesh-styles.css" rel="stylesheet" />
+		<!-- Bootstrap CSS --> 
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 		<!-- Canonical Selector --> 
 		<link rel="canonical" href="https://www.uh-sheesh.com/" />
-		<!-- Bootstrap Icons --> 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+		<!-- Gallery Lightbox Stylesheet by Lokesh Dhakar: https://lokeshdhakar.com/-->
+		<link href="css/lightbox/lightbox.min.css" rel="stylesheet">
 	</head>
-	<body>
-		<header>
-			<nav class="navbar navbar-expand-lg nav-bar-custom">
-				<a class="navbar-brand" href="index.html"><strong>Ashish Hingle</strong></a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"> <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i> </span> </button> 
-				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-					<ul class="navbar-nav justify-content-end">
-						<!-- Publications -->
-						<li class="nav-item dropdown">
-							<a class="nav-link" href="publications-proceedings.html" role="button" aria-expanded="false" style="display: inline-flex;"> Publications & Proceedings</a> 
-							<a class="nav-link-icon dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></a> 
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="publications-proceedings.html#journals">Journal Articles</a></li>
-								<li><a class="dropdown-item" href="publications-proceedings.html#proceedings">Conference Proceedings</a> </li>
-								<li><a class="dropdown-item" href="publications-proceedings.html#editorials">Guest Editorials</a> </li>
-								<li><a class="dropdown-item" href="publications-proceedings.html#repositories">Online Repositories</a> </li>
-							</ul>
-						</li>
-						<!-- Presentations -->
-						<li class="nav-item dropdown">
-							<a class="nav-link" href="presentations.html" role="button" aria-expanded="false" style="display: inline-flex;"> Presentations </a> 
-							<a class="nav-link-icon dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></a> 
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="presentations.html#invited-talks">Invited Talks</a></li>
-								<li><a class="dropdown-item" href="presentations.html#workshops">Workshops</a> </li>
-							</ul>
-						</li>
-						<!-- Projects -->
-						<li class="nav-item dropdown">
-							<a class="nav-link" href="projects/index.html" role="button" aria-expanded="false" style="display: inline-flex;"> Projects </a> 
-							<a class="nav-link-icon dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></a> 
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="projects/mason-tech-ethics.html">Mason Tech Ethics</a></li>
-							</ul>
-						</li>
-						<!-- Service -->
-						<li class="nav-item dropdown">
-							<a class="nav-link" href="service/index.html" role="button" aria-expanded="false" style="display: inline-flex;"> Service </a> 
-							<a class="nav-link-icon dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></a> 
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="service/academic-professional-service.html">Academic and Professional Service</a></li>
-								<li><a class="dropdown-item" href="service/community-service.html">Community Service</a> </li>
-							</ul>
-						</li>
-						<!-- Press -->
-						<li class="nav-item dropdown">
-							<a class="nav-link" href="press/index.html" role="button" aria-expanded="false" style="display: inline-flex;"> Press </a> 
-						</li>
-						<!-- Creative Cafe -->
-						<li class="nav-item dropdown">
-							<a class="nav-link" href="creative-cafe/index.html" role="button" aria-expanded="false" style="display: inline-flex;"> Creative Cafe </a> 
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+	<body id="page-top" class="landing-body">
+		<!-- Navigation-->
+		<nav class="navbar navbar-expand-lg fixed-top text-bg-light" id="sideNav">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<span class="d-block">Ashish Hingle</span>
+			</a>
+			<a style="width: 60%">
+			<span class="d-none d-lg-block m-3"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile-sketch.png" alt="A sketched profile picture of Ashish.s" /></span>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link js-scroll-trigger active" href="#summary">Summary</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#updates">Updates</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
+					<div class="secondary-nav">
+						<li class="nav-item"><a class="nav-link-secondary js-scroll-trigger m-2" href="#journals">Journal Articles</a></li>
+						<li class="nav-item"><a class="nav-link-secondary js-scroll-trigger m-2" href="#conferences">Proceedings</a></li>
+					</div>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#service">Service</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#press">Press</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cafe">Creative Cafe</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Page Content-->
+		<div class="container-fluid p-0">
+			<!-- Summary-->
+			<section class="uhsheesh-section" id="summary">
+				<div class="uhsheesh-section-content">
+					<h1 class="mb-0 fw-bold display-4">
+						Hi! My name is 
+						<span class="gr">Ashish Hingle</span>!
+					</h1>
+					<p style="font-style: italic;">Pronounced "uh-sheesh"</p>
+					<div class="row">
+						<div class="col-md-3" style="padding:10px;">
+							<img class="figure-img img-fluid rounded img-thumbnail" src="img/profile-pic.jpg" alt="Ashish's profile picture" width="100%">
+						</div>
+						<div class="col-md-9">
+							<p class="lead">I am a PhD student in Information Technology in the <a class="bl-600" href="https://cec.gmu.edu/" target="_blank">College of Engineering and Computing</a> at <a class="bl-600" href="https://www.gmu.edu/" target="_blank">George Mason University</a> (Go Patriots!).</p>
+							<p class="lead">My research interests include education in higher education, engineering education, and student-self efficacy. My interests are influenced by my experiences as a first-generation college student navigating through academia.</p>
+							<p class="lead">I am part of the Technocritical Research on AI, Learning & Society Lab (trailsLAB) at GMU. Currently, I am working on the <a class="bl-600" href="https://www.ist.gmu.edu/eecl/techethics/" target="_blank">Mason Tech Ethics Project</a>, an NSF-funded grant exploring student's understanding of ethical thinking in our high-tech world. We use role-play activities as a medium for students to explore different perspectives in everyday actions that have ethical considerations.</p>
+							<div class="social-icons">
+								<a class="social-icon div-linkedin" href="https://www.linkedin.com/in/ashhingle/"><i class="fab fa-linkedin-in"></i></a>
+								<a class="social-icon div-github" href="#!"><i class="fab fa-github"></i></a>
+								<a class="social-icon div-scholar" href="#!"><i class="fa fa-graduation-cap"></i></a>
+								<a class="social-icon div-orcid" href="#!"><i class="fa fa-brands fa-orcid"></i></a>
+							</div>
+						</div>
+					</div>
+					<hr/>
+					<div class="row">
+						<div class="col-md-8">
+							<p class="lead">In conducting my doctoral work, I have received several merit fellowships and scholarships. I am a <a class="bl-600" href="https://www.scu.edu/ethics/about-the-center/center-news/the-summer-institute-in-technology-ethics-at-santa-clara-university/" target="_blank">Summer Institute for Technology Ethics Fellow</a> (Santa Clara University), <a class="bl-600" href="https://icicle.osu.edu/education-and-outreach/icicle-educational-fellows-program" target="_blank">ICICLE Educational Fellow</a> working with the <a class="bl-600" href="https://icicle.osu.edu/" target="_blank">ICICLE National AI Institute</a> (Ohio State University), a Program Scholar and an <a class="bl-600" href="https://www.aistrategies.gmu.edu/summerinstitute" target="_blank">AI and Tech Policy Summer Fellow</a> (George Mason University).</p>
+							<p class="lead">I hold a M.S. in Business Administration (emphasis in Information Security and Assurance) and B.S. in Business Administration (emphasis in Computer Information Systems) from <a class="bl-600" href=" https://www.cpp.edu/" target="_blank">California State Polytechnic University, Pomona</a> (Go Broncos!).</p>
+							<p class="lead">I also hold Associates degrees from <a class="bl-600" href="https://pasadena.edu/" target="_blank">Pasadena City College</a> (Go Lancers!).</p>
 
-		<div>
-			<div class="padder content-color">
-				<div class="row">
-					<div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3" style="padding-bottom:40px;">
-						<div class="row">
-							<div style="padding:10px;"> <img src="img/profile-pic.jpg" style="border-bottom: solid .5rem #60803f; border-radius: 9px;" alt="Ashish profile picture" width="100%" height="100%"> </div>
-						</div>
-						<div class="row" style="text-align:center; padding:0px 10px;">
-							<div class="col div-linkedin"> <a href="https://www.linkedin.com/in/ashhingle/" style="color: #212529" target="_blank"> <em class="fa fa-linkedin fa-fw icon-linkedin"></em> </a> </div>
-							<div class="col div-scholar"> <a href="https://scholar.google.com/citations?hl=en&user=im6Pn4MAAAAJ" style="color: #212529" target="_blank"> <em class="fa fa-graduation-cap fa-fw icon-scholar"></em> </a> </div>
-							<div class="col div-orcid"> <a href="https://orcid.org/0000-0002-6178-1256" style="color: #212529" target="_blank"> <em class="fa fa-brands fa-orcid fa-fw icon-orcid"></em> </a> </div>
-							<div class="col div-github"> <a href="https://github.com/uh-sheesh" style="color: #212529" target="_blank"> <em class="fa fa-github fa-fw icon-github"></em> </a> </div>
-						</div>
-					</div>
-					<div class="col-lg-8 col-md-12">
-						<h1 class="display-5 fw-bold">Hi! My name is Ashish Hingle!</h1>
-						<p style="font-style: italic;">Pronounced "uh-sheesh"</p>
-						<p>I am a PhD student in Information Technology in the <a href="https://cec.gmu.edu/" target="_blank">College of Engineering and Computing</a> at <a href="https://www.gmu.edu/" target="_blank">George Mason University</a> (Go Patriots!). My pronouns are he/him/his.</p>
-						<p>My research interests include education in higher education, engineering education, and student-self efficacy. My interests are influenced by my experiences as a first-generation college student navigating through academia.</p>
-						<p>I am part of the Technocritical Research on AI, Learning & Society Lab (trailsLAB) at GMU. Currently, I am working on the <a href="https://www.ist.gmu.edu/eecl/techethics/" target="_blank">Mason Tech Ethics Project</a>, an NSF-funded grant exploring student's understanding of ethical thinking in our high-tech world. We use role-play activities as a medium for students to explore different perspectives in everyday actions that have ethical considerations.</p>
-						<p>In conducting my doctoral work, I have received several merit fellowships and scholarships. I am a <a href="https://www.scu.edu/ethics/about-the-center/center-news/the-summer-institute-in-technology-ethics-at-santa-clara-university/" target="_blank">Summer Institute for Technology Ethics Fellow</a> (Santa Clara University), <a href="https://icicle.osu.edu/education-and-outreach/icicle-educational-fellows-program" target="_blank">ICICLE Educational Fellow</a> working with the <a href="https://icicle.osu.edu/" target="_blank">ICICLE National AI Institute</a> (Ohio State University), a Program Scholar and an <a href="https://www.aistrategies.gmu.edu/summerinstitute" target="_blank">AI and Tech Policy Summer Fellow</a> (George Mason University).</p>
-						<p>I hold a M.S. in Business Administration (emphasis in Information Security and Assurance) and B.S. in Business Administration (emphasis in Computer Information Systems) from <a href=" https://www.cpp.edu/" target="_blank">California State Polytechnic University, Pomona</a> (Go Broncos!). I also hold Associates degrees from <a href="https://pasadena.edu/" target="_blank">Pasadena City College</a> (Go Lancers!).</p>
-					</div>
-				</div>
-				<hr class="divider" />
-			</div>
-			<div class="padder">
-				<div class="row">
-					<div class="col-md-12">
-						<h2>Current and Past Institutions</h2>
-					</div>
-				</div>
-				<div class="row" style="text-align: center; background-color: white; color:#212529">
-					<div class="col-md-4">
-						<div style="padding:10px;"> <a href="https://www.gmu.edu/" target="_blank"><img src="img/logos/logo-gm.jpg"  alt="George Mason University Logo" width="100%" height="100%"></a> </div>
-					</div>
-					<div class="col-md-4">
-						<div style="padding:10px;"> <a href="https://www.cpp.edu/" target="_blank"><img src="img/logos/logo-cpp.jpg"  alt="Cal Poly Pomona Logo" width="100%" height="100%"></a> </div>
-					</div>				
-					<div class="col-md-4">
-						<div style="padding:10px;"> <a href="https://www.pasadena.edu/" target="_blank"><img src="img/logos/logo-pcc.jpg"  alt="Pasadena City College Logo" width="100%" height="100%"></a> </div>
-					</div>
-				</div>
-				<hr class="divider" />
-				<div class="row">
-					<div class="col-md-12">
-						<h2>Fellowships</h2>
-					</div>
-				</div>
-				<div class="row" style="text-align: center; background-color: white; color:#212529">
-					<div class="col-md-3">
-						<div style="padding:10px;"> <a href="https://www.scu.edu/ethics/about-the-center/center-news/the-summer-institute-in-technology-ethics-at-santa-clara-university/" target="_blank"><img src="img/logos/logo-site.png"  alt="Summer Institute of Technology Ethics Logo" width="100%" height="100%"></a> </div>
-					</div>
-					<div class="col-md-3">
-						<div style="padding:10px;"> <a href="https://icicle.osu.edu/education-and-outreach/icicle-educational-fellows-program" target="_blank"><img src="img/logos/logo-icicle.png"  alt="ICICLE Educational Fellows Logo" width="100%" height="100%"></a> </div>
-					</div>				
-					<div class="col-md-3">
-						<div style="padding:10px;"> <a href="https://www.gmu.edu/" target="_blank"><img src="img/logos/logo-aitech.png"  alt="AI and Tech Policy Placeholder" width="100%" height="100%"></a> </div>
-					</div>	
-				</div>
-				<hr class="divider" />
-				<div class="row">
-					<div class="col-md-12">
-						<h2>Publications, Proceedings, and Projects Updates</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="accordion accordion-flush" id="accordianRecentUpdates">
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="2024-recentUpdates"> <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"> 2024 </button> </h2>
-							<div id="flush-collapseFive" class="accordion-collapse show" aria-labelledby="2024-recentUpdates">
-								<div class="accordion-body table-responsive-md">
-									<table class="table table-sm table-striped">
-										<thead class="thead-dark">
-											<tr>
-												<th scope="col" class="col-1">Date</th>
-												<th scope="col" class="col-10">Activity</th>
-												<th scope="col" class="col-1"></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<th scope="row">03-24</th>
-												<td>Placed Second for the Student Research Competition Graduate Category at the 55th ACM Technical Symposium on Computer Science Education Student Research Competition, Portland, Oregon.</td>
-												<td><a href="https://dl.acm.org/doi/abs/10.1145/3626253.3635405" target="_blank">Abstract Link</a></td>
-											</tr>
-											<tr>
-												<th scope="row">03-24</th>
-												<td>Placed Second in the GMU College of Engineering and Computing Innovation Week 2024 Graduate Student Poster Competition, Fairfax, Virginia.</td>
-												<td></td>
-											</tr>
-											<tr>
-												<th scope="row">02-24</th>
-												<td>Presented a conference paper at the 2024 Collaborative Network for Engineering & Computing Diversity (CoNECD), Arlington, Virginia.</td>
-												<td></td>
-											</tr>
-											<tr>
-												<th scope="row">01-24</th>
-												<td>Received Best Paper nomination (Computing Education Minitrack) for a conference paper at the 57th Hawaii International Conference on System Sciences in Waikiki, HI.</td>
-												<td><a href="https://hdl.handle.net/10125/107005" target="_blank">Paper Link</a></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="2023-recentUpdates"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"> 2023 </button> </h2>
-							<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="2023-recentUpdates">
-								<div class="accordion-body">
-									<table class="table table-sm table-striped">
-										<thead class="thead-dark">
-											<tr>
-												<th scope="col" class="col-1">Date</th>
-												<th scope="col" class="col-10">Activity</th>
-												<th scope="col" class="col-1"></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<th scope="row">10-23</th>
-												<td>Presented two conference papers at the 2022 Frontiers in Education Annual Conference in College Station, TX.</td>
-												<td></td>
-											</tr>
-											<tr>
-												<th scope="row">10-23</th>
-												<td>Presented a conference paper at the 24th Annual Conference on Ethics Across the Curriculum in Harrisonburg, VA.</td>
-												<td></td>
-											</tr>
-											<tr>
-												<th scope="row">09-23</th>
-												<td>Presented a conference paper at the 2023 European Society for Engineering Education (SEFI) Conference in Dublin, Ireland.</td>
-												<td></td>
-											</tr>
-											<tr>
-												<th scope="row">08-23</th>
-												<td>Gave the Invited Keynote Talk at the <em>9th Annual Creative Activities and Research Symposium</em> in Pomona, CA.</td>
-												<td></td>
-											</tr>
-											<tr>
-												<th scope="row">07-23</th>
-												<td>Elected as 2023-24 Executive Vice President for the <em>Graduate & Professional Student Association (GAPSA)</em>.</td>
-												<td><a href="https://gapsa.gmu.edu/" target="_blank">Link</a></td>
-											</tr>
-											<tr>
-												<th scope="row">07-23</th>
-												<td>Elected as 2023-24 Best Paper Chair for the American Society for Engineering Education Student Division (ASEE-SD).</td>
-												<td><a href="https://sites.asee.org/students/" target="_blank">Link</a></td>
-											</tr>
-											<tr>
-												<th scope="row">07-23</th>
-												<td>Presented a conference paper at the 2023 American Society for Engineering Education Annual Conference in Baltimore, MD.</td>
-												<td class="col-1"></td>
-											</tr>
-											<tr>
-												<th scope="row">06-23</th>
-												<td>Selected as a Grant Recipient from George Mason University.</td>
-												<td class="col-1"></td>
-											</tr>
-											<tr>
-												<th scope="row">06-23</th>
-												<td>Selected as a Fellow for the ICICLE National AI Institute Educational Fellows Program.</td>
-												<td><a href="https://icicle.osu.edu/education-and-outreach/icicle-educational-fellows-program" target="_blank">Link</a></td>
-											</tr>
-											<tr>
-												<th scope="row">05-23</th>
-												<td>Received Honorable Mention for a poster at the 2023 IEEE International Symposium on Ethics in Engineering, Science, and Technology, West Lafayette, IN.</td>
-												<td class="col-1"></td>
-											</tr>
-											<tr>
-												<th scope="row">03-23</th>
-												<td>Presented a conference paper at the 2023 American Society for Engineering Education Southeastern Section at George Mason University.</td>
-												<td class="col-1"></td>
-											</tr>
-											<tr>
-												<th scope="row">01-23</th>
-												<td>Published an Open-access journal paper in the Journal of Engineering Education (JEE).</td>
-												<td><a href="https://doi.org/10.1002/jee.20504" target="_blank">Link</a></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="2022-recentUpdates"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"> 2022 </button> </h2>
-							<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="2022-recentUpdates">
-								<div class="accordion-body">
-									<table class="table table-sm table-striped">
-										<thead class="thead-dark">
-											<tr>
-												<th scope="col" class="col-1">Date</th>
-												<th scope="col" class="col-10">Activity</th>
-												<th scope="col" class="col-1"></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<th scope="row">10-22</th>
-												<td>Presented two conference papers at the 2022 Frontiers in Education Annual Conference in Uppsala, Sweden.</td>
-												<td class="col-1"></td>
-											</tr>
-											<tr>
-												<th scope="row">10-22</th>
-												<td>Selected to serve as a Member of the Mason Recreation Advisory Board, 2022-23.</td>
-												<td class="col-1"></td>
-											</tr>
-											<tr>
-												<th scope="row">09-22</th>
-												<td>Presented an interactive poster at the 14th Annual Innovations in Teaching & Learning Conference at George Mason University.</td>
-												<td class="col-1"></td>
-											</tr>
-											<tr>
-												<th scope="row">09-22</th>
-												<td>Selected as a Scholar for the Summer Institute for Technology Ethics, 2022.</td>
-												<td><a href="https://www.scu.edu/ethics/about-the-center/center-news/the-summer-institute-in-technology-ethics-at-santa-clara-university/" target="_blank">Link</a></td>
-											</tr>
-											<tr>
-												<th scope="row">07-22</th>
-												<td>Elected as the 2022-23 Director of Communication for the Graduate & Professional Student Association (GAPSA).</td>
-												<td><a href="https://gapsa.gmu.edu/" target="_blank">Link</a></td>
-											</tr>
-											<tr>
-												<th scope="row">06-22</th>
-												<td>Elected as the 2022-23 Co-Diversity Chair for the Student Division of the American Society for Engineering Education (ASEE).</td>
-												<td><a href="https://sites.asee.org/students/" target="_blank">Link</a></td>
-											</tr>
-											<tr>
-												<th scope="row">06-22</th>
-												<td>Presented two conference papers, and a poster at the American Society for Engineering Education Annual Conference, 2022!</td>
-												<td class="col-1"></td>
-											</tr>
-											<tr>
-												<th scope="row">03-22</th>
-												<td>Presented a conference poster at 2022 Mason Graduate Interdisciplinary Conference.</td>
-												<td class="col-1"></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="2021-recentUpdates"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> 2021 </button> </h2>
-							<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="2021-recentUpdates">
-								<div class="accordion-body">
-									<table class="table table-sm table-striped">
-										<thead class="thead-dark">
-											<tr>
-												<th scope="col" class="col-1">Date</th>
-												<th scope="col" class="col-10">Activity</th>
-												<th scope="col" class="col-1"></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<th scope="row">10-21</th>
-												<td>Presented a conference paper at Frontiers in Education, 2021 (virtual conference)!</td>
-												<td class="col-1"></td>
-											</tr>
-											<tr>
-												<th scope="row">09-21</th>
-												<td>Presented two interactive sessions at the Stearns Center for Teaching and Learning Annual Conference ITL 2021 (virtual conference)!</td>
-												<td class="col-1"></td>
-											</tr>
-											<tr>
-												<th scope="row">08-21</th>
-												<td>Selected as the 2021-2022 General Assembly Representative for the PhD in Information Technology Program!</td>
-												<td><a href="https://gapsa.gmu.edu/" target="_blank">Link</a></td>
-											</tr>
-											<tr>
-												<th scope="row">07-21</th>
-												<td>Presented a conference paper at American Society for Engineering Education, 2021 (virtual conference)!</td>
-												<td class="col-1"></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="2020-recentUpdates"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> 2020 </button> </h2>
-							<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="2020-recentUpdates">
-								<div class="accordion-body">
 
-									<table class="table table-sm table-striped">
-										<thead class="thead-dark">
-											<tr>
-												<th scope="col" class="col-1">Date</th>
-												<th scope="col" class="col-10">Activity</th>
-												<th scope="col" class="col-1"></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<th scope="row">09-20</th>
-												<td>Selected as 2020-2021 General Assembly Representative for the PhD in Information Technology Program!</td>
-												<td><a href="https://gapsa.gmu.edu/" target="_blank">Link</a></td>
-											</tr>
-											<tr>
-												<th scope="row">08-20</th>
-												<td>Started working on the Mason Tech Ethics Project!</td>
-												<td><a href="projects/mason-tech-ethics.html" target="_blank">Link</a></td>
-											</tr>		
-										</tbody>
-									</table>
-								</div>
-							</div>
+						</div>
+						<div class="col-md-4" style="padding:10px;">
+							<img class="rounded m-1" src="img/logos/gmu-logo.png" alt="George Mason University logo" width="100%">
+							<img class="rounded m-1" src="img/logos/cpp-logo.png" alt="Cal Poly Pomona logo" width="100%">
+							<img class="rounded m-1" src="img/logos/pcc-logo.png" alt="Pasadena City College logo" width="100%">
+						</div>
+					</div>
+					<h2 class="mb-5" id="updates">Updates</h2>
+					<!-- Masonary with Bootstrap -->
+					<div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 690px;">
+						<div class="col-sm-6 col-lg-4 mb-4">
+							<img src="img/photography/ip-2-thumb.jpg" class="rounded img-fluid" alt="Placeholder image">
+							<p class="card-text p-2 fw-bold">(Posting soon) Update #1</p>
+						</div>
+						<div class="col-sm-6 col-lg-4 mb-4">
+							<img src="img/photography/ip-2-thumb.jpg" class="rounded img-fluid" alt="Placeholder image">
+							<p class="card-text p-2 fw-bold">(Posting soon) Update #2</p>
+						</div>
+						<div class="col-sm-6 col-lg-4 mb-4">
+							<img src="img/photography/ip-2-thumb.jpg" class="rounded img-fluid" alt="Placeholder image">
+							<p class="card-text p-2 fw-bold">(Posting soon) Update #3</p>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<footer>
-						<p style="text-align:center;">All Rights, Materials, Opinions © Ashish Hingle 2024</p>
-					</footer>
-				</div>
-			</div>
 		</div>
-		<!-- JavaScript Bootstrap Bundle with Popper --> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
+		</section>
+		<hr class="m-0" />
+		<!-- Experience-->
+		<section class="uhsheesh-section" id="research">
+			<div class="uhsheesh-section-content">
+				<h2 class="mb-5">Research</h2>
+				<div class="card" style="background-color: #f4f4f5;" id="journals">
+					<div class="card-body uh-card-body-2">
+						<div>
+							<table class="table table-sm table-borderless">
+								<thead>
+									<tr>
+										<th scope="col"></th>
+										<th scope="col">Selected Journal Articles</th>
+										<th scope="col"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="table-divider">
+										<td class="align-middle text-center p-2">
+											<i class="fa-solid fa-grip-lines-vertical"></i>
+										<td>
+											<p class="m-0 p-1"><a class="bl" href="https://ieeexplore.ieee.org/document/10547225">A Framework to Develop and Implement Role-Play Case Studies to Teach Responsible Technology Use</a></p>
+											<p class="m-0 p-1"><span class="fw-bold">Ashish Hingle</span> & Aditya Johri</p>
+											<p class="m-0 p-1"><span class="fst-italic">IEEE Transactions on Technology and Society</p>
+										</td>
+										<td class="align-middle text-end">
+											<p class="m-1 p-1"><a href="https://dl.acm.org/doi/abs/10.1145/3626253.3635405" class="btn btn-dark btn-sm"><i class="fa-solid fa-square-up-right"></i> Link</a></p>
+											<p class="m-1 p-1"><a href="https://dl.acm.org/doi/abs/10.1145/3626253.3635405" class="btn btn-dark btn-sm"><i class="fa-solid fa-file-arrow-down"></i> Download</a></p>
+										</td>
+									</tr>
+									<tr class="table-divider">
+										<td class="align-middle text-center p-2">
+											<i class="fa-solid fa-grip-lines-vertical"></i>
+										<td>
+											<p class="m-0 p-1"><a class="bl" href="https://ieeexplore.ieee.org/document/10547225">Students' technological ambivalence toward online proctoring and the need for responsible use of educational technologies</a></p>
+											<p class="m-0 p-1">Aditya Johri & <span class="fw-bold">Ashish Hingle</span></p>
+											<p class="m-0 p-1"><span class="fst-italic">Journal of Engineering Education</p>
+										</td>
+										<td class="align-middle text-end">
+											<p class="m-1 p-1"><a href="https://dl.acm.org/doi/abs/10.1145/3626253.3635405" class="btn btn-dark btn-sm"><i class="fa-solid fa-square-up-right"></i> Link</a></p>
+											<p class="m-1 p-1"><a href="https://dl.acm.org/doi/abs/10.1145/3626253.3635405" class="btn btn-dark btn-sm"><i class="fa-solid fa-file-arrow-down"></i> Download</a></p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="m-3">
+					<div class="d-grid gap-2 col-lg-6 offset-lg-6">
+						<a class="icon-link icon-link-hover btn btn-dark text-end" href="research.html">
+						More Journal Articles 
+						<i class="fa-solid fa-arrows-turn-right"></i>
+						</a>
+					</div>
+				</div>
+				<div class="card" style="background-color: #f4f4f5;" id="conferences">
+					<div class="card-body uh-card-body-2">
+						<div>
+							<table class="table table-sm table-borderless">
+								<thead>
+									<tr>
+										<th scope="col"></th>
+										<th scope="col">Selected Conference Proceedings Articles</th>
+										<th scope="col"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="table-divider">
+										<td class="align-middle text-center p-2">
+											<i class="fa-solid fa-grip-lines-vertical"></i>
+										<td>
+											<p class="m-0 p-1"><a class="bl" href="https://scholarspace.manoa.hawaii.edu/items/8ea72735-3b73-4f1a-82a1-5e30e8e41a43">Accessing and Democratizing AI for Whom? Student Learning through an Algorithm-Centered Supply Chain Case Study.</a></p>
+											<p class="m-0 p-1"><span class="fw-bold">Ashish Hingle</span> & Aditya Johri</p>
+											<p class="m-0 p-1"><span class="fst-italic">55th ACM Technical Symposium on Computer Science Education Student Research Competition (SIGCSE)</p>
+										</td>
+										<td class="align-middle text-end">
+											<p class="m-1 p-1"><a href="https://dl.acm.org/doi/abs/10.1145/3626253.3635405" class="btn btn-dark btn-sm"><i class="fa-solid fa-square-up-right"></i> Link</a></p>
+											<p class="m-1 p-1"><a href="https://dl.acm.org/doi/abs/10.1145/3626253.3635405" class="btn btn-dark btn-sm"><i class="fa-solid fa-file-arrow-down"></i> Download</a></p>
+										</td>
+									</tr>
+									<tr class="table-divider">
+										<td class="align-middle text-center p-2">
+											<i class="fa-solid fa-grip-lines-vertical"></i>
+										<td>
+											<p class="m-0 p-1"><a class="bl" href="https://scholarspace.manoa.hawaii.edu/items/8ea72735-3b73-4f1a-82a1-5e30e8e41a43">Role-Play Case Studies to Teach Computing Ethics: Theoretical Foundations and Practical Guidelines.</a></p>
+											<p class="m-0 p-1"><span class="fw-bold">Ashish Hingle</span> & Aditya Johri</p>
+											<p class="m-0 p-1"><span class="fst-italic">57th Hawaii International Conference on System Sciences (HICSS)</p>
+										</td>
+										<td class="align-middle text-end">
+											<p class="m-1 p-1"><a href="https://dl.acm.org/doi/abs/10.1145/3626253.3635405" class="btn btn-dark btn-sm"><i class="fa-solid fa-square-up-right"></i> Link</a></p>
+											<p class="m-1 p-1"><a href="https://dl.acm.org/doi/abs/10.1145/3626253.3635405" class="btn btn-dark btn-sm"><i class="fa-solid fa-file-arrow-down"></i> Download</a></p>
+										</td>
+									</tr>
+									<tr class="table-divider">
+										<td class="align-middle text-center p-2">
+											<i class="fa-solid fa-grip-lines-vertical"></i>
+										<td>
+											<p class="m-0 p-1"><a class="bl" href="https://ieeexplore.ieee.org/document/10342985">Exploring NLP-based Methods for Generating Engineering Ethics Assessment Qualitative Codebooks.</a></p>
+											<p class="m-0 p-1"><span class="fw-bold">Ashish Hingle</span> Andrew Katz, & Aditya Johri</p>
+											<p class="m-0 p-1"><span class="fst-italic">2023 IEEE/ASEE Frontiers in Education Conference</p>
+										</td>
+										<td class="align-middle text-end">
+											<p class="m-1 p-1"><a href="https://dl.acm.org/doi/abs/10.1145/3626253.3635405" class="btn btn-dark btn-sm"><i class="fa-solid fa-square-up-right"></i> Link</a></p>
+											<p class="m-1 p-1"><a href="https://dl.acm.org/doi/abs/10.1145/3626253.3635405" class="btn btn-dark btn-sm"><i class="fa-solid fa-file-arrow-down"></i> Download</a></p>
+										</td>
+									</tr>
+									<tr class="table-divider">
+										<td class="align-middle text-center p-2">
+											<i class="fa-solid fa-grip-lines-vertical"></i>
+										<td>
+											<p class="m-0 p-1"><a class="bl" href="https://ieeexplore.ieee.org/document/9637418">Using Role-Plays to Improve Ethical Understanding of Algorithms Among Computing Students.</a></p>
+											<p class="m-0 p-1"><span class="fw-bold">Ashish Hingle</span>, Huzefa Rangwala, Aditya Johri, & Alexander Monea</p>
+											<p class="m-0 p-1"><span class="fst-italic">2021 IEEE/ERM Frontiers in Education</p>
+										</td>
+										<td class="align-middle text-end">
+											<p class="m-1 p-1"><a href="https://dl.acm.org/doi/abs/10.1145/3626253.3635405" class="btn btn-dark btn-sm"><i class="fa-solid fa-square-up-right"></i> Link</a></p>
+											<p class="m-1 p-1"><a href="https://dl.acm.org/doi/abs/10.1145/3626253.3635405" class="btn btn-dark btn-sm"><i class="fa-solid fa-file-arrow-down"></i> Download</a></p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="m-3">
+					<div class="d-grid gap-2 col-lg-6 offset-lg-6">
+						<a class="icon-link icon-link-hover btn btn-dark text-end" href="research.html">
+						More Conference Proceedings 
+						<i class="fa-solid fa-arrows-turn-right"></i>
+						</a>
+					</div>
+				</div>
+				<div class="m-3">
+					<div class="d-grid gap-2 col-lg-6 offset-lg-6">
+						<a class="icon-link icon-link-hover btn btn-success text-end" href="research.html">
+						Other Scholarship
+						<i class="fa-solid fa-arrows-turn-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr class="m-0" />
+		<!-- Projects-->
+		<section class="uhsheesh-section" id="projects">
+			<div class="uhsheesh-section-content">
+				<h2 class="mb-5">Projects</h2>
+				<div id="carouselExampleIndicators" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row row-cols-1 row-cols-md-3 g-4">
+								<div class="col">
+									<div class="card h-100">
+										<a href="projects/mason-tech-ethics.html" target="_blank">
+										<img src="img/projects/icon-tech-ethics.png" class="card-img-top" alt="Mason Technology Ethics logo">
+										</a>
+										<div class="card-body">
+											<h5 class="card-title">Mason Technology Ethics</h5>
+											<p class="card-text">The Mason Tech Ethics project focuses on how students can be better prepared to face the challenge of working with technology broadly, but algorithms, AI, and new emerging technologies specifically. How can students be better prepared to face the challenges of working with emerging technologies?</p>
+											<a class="btn btn-dark float-end" href="projects/mason-tech-ethics.html">Explore Project</a>
+										</div>
+										<div class="card-footer">
+											<small class="text-body-secondary">
+												<i class="far fa-clock"></i> 2020 - Ongoing<br /><i class="far fa-pen-to-square"></i> College of Engineering and Computing, George Mason University
+											</small>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card h-100">
+										<a href="https://www.uh-sheesh.com/722-project/" target="_blank">
+										<img src="img/projects/icon-student-involvement.png" class="card-img-top" alt="An illustration of a tent canopy with a person standing underneath.">
+										</a>
+										<div class="card-body">
+											<h5 class="card-title">Digital Student Organization Recruitment</h5>
+											<p class="card-text">We collected data from Twitter (Researcher API) and  Mason360 about GMU Student Organization's recruitment strategy. We grouped similar tweets using LDA and created recommendations that Organizations can implement to better recruit online.</p>
+											<a class="btn btn-dark float-end" href="https://www.uh-sheesh.com/722-project/">Explore Project</a>
+										</div>
+										<div class="card-footer">
+											<small class="text-body-secondary">
+												<i class="far fa-clock"></i> 2021<br /><i class="far fa-pen-to-square"></i> College of Engineering and Computing, George Mason University
+											</small>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card h-100">
+										<a href="projects/dev-com-analysis.html" target="_blank">
+										<img src="img/projects/icon-social-media.png" class="card-img-top" alt="An illustration of several boxes with arrows pointing between them."></a>
+										<div class="card-body">
+											<h5 class="card-title">Network Analysis in Developer Communities</h5>
+											<p class="card-text">We collected data from developer communities on Reddit, and explored the network & collaborative behaviors of how users post, what programming languages have cross-posters, what they are posting, and who common influencers may be.</p>
+											<a class="btn btn-dark float-end" href="projects/dev-com-analysis.html">Explore Project</a>
+										</div>
+										<div class="card-footer">
+											<small class="text-body-secondary">
+												<i class="far fa-clock"></i> 2021<br /><i class="far fa-pen-to-square"></i> College of Engineering and Computing, George Mason University
+											</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row row-cols-1 row-cols-md-3 g-4">
+								<div class="col">
+									<div class="card h-100">
+										<a href="projects/our-work.html" target="_blank">
+										<img src="img/projects/icon-infographics.png" class="card-img-top" alt="An illustration of a computer."></a>
+										<div class="card-body">
+											<h5 class="card-title">Office of Undergraduate Research Infographics</h5>
+											<p class="card-text">Infographics for the Office of Undergraduate Research highlighting the impact of activities. These infographics were shared with administration and researchers, and were used in grant writing efforts across campus.</p>
+											<a class="btn btn-dark float-end" href="projects/our-work.html">Explore Project</a>
+										</div>
+										<div class="card-footer">
+											<small class="text-body-secondary">
+												<i class="far fa-clock"></i> 2015 - 2020<br /><i class="far fa-pen-to-square"></i> Office of Undergraduate Research, Cal Poly Pomona
+											</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="float-end p-4">
+					<button class="btn btn-success" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="btn btn-success" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
+		<hr class="m-0" />
+		<!-- Service-->
+		<section class="uhsheesh-section" id="service">
+			<div class="uhsheesh-section-content">
+				<h2 class="mb-5">Service</h2>
+				<div id="carouselExampleIndicators2" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="card-group">
+								<div class="card mb-3" style="max-width: 540px;">
+									<div class="row g-0">
+										<div class="col-md-5">
+											<a href="https://www.cpp.edu/cba/rsca-showcase/" target="_blank">
+											<img src="img/events/cba-rsca-logo.jpg" class="img-fluid rounded-start" alt="The College of Business Administration Research Showcase logo."></a>
+										</div>
+										<div class="col-md-7">
+											<div class="card-body">
+												<h6 class="card-title fw-bold">CBA RSCA Showcase</h6>
+												<p class="card-text">The Showcase highlights student research from the College of Business Administration at Cal Poly Pomona.</p>
+												<a class="btn btn-dark" href="https://www.cpp.edu/cba/rsca-showcase/" target="_blank">Explore Service</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-3" style="max-width: 540px;">
+									<div class="row g-0">
+										<div class="col-md-5">
+											<a href="https://www.cpp.edu/cppsrc/index.shtml" target="_blank">
+											<img src="img/events/rsca-logo.png" class="img-fluid rounded-start" alt="The Research, Schoalrship, and Creative Activies Conference logo."></a>
+										</div>
+										<div class="col-md-7">
+											<div class="card-body">
+												<h6 class="card-title fw-bold">CPP Student RSCA Conference</h6>
+												<p class="card-text">The RSCA is a competitive annual spring event for CPP students from all disciplines.</p>
+												<a class="btn btn-dark" href="https://www.cpp.edu/cppsrc/index.shtml" target="_blank">Explore Service</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-group">
+								<div class="card mb-3" style="max-width: 540px;">
+									<div class="row g-0">
+										<div class="col-md-5">
+											<a href="https://www.cpp.edu/our-cpp/events-workshops/cars/index.shtml" target="_blank">
+											<img src="img/events/cars-logo.jpg" class="img-fluid rounded-start" alt="The Creative Activities and Research Symposium logo"></a>
+										</div>
+										<div class="col-md-7">
+											<div class="card-body">
+												<h6 class="card-title fw-bold">Creative Activities & Research Symposium (CPP CARS)</h6>
+												<p class="card-text">The CARS is an annual summer event for CPP students from all disciplines to disseminate their work.</p>
+												<a class="btn btn-dark" href="https://www.cpp.edu/our-cpp/events-workshops/cars/index.shtml" target="_blank">Explore Service</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="float-end p-4">
+					<button class="btn btn-success" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="btn btn-success" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
+		<hr class="m-0" />
+		<!-- Press-->
+		<section class="uhsheesh-section" id="press">
+			<div class="uhsheesh-section-content">
+				<h2 class="mb-5">Press</h2>
+				<div id="carouselExampleIndicators3" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row row-cols-1 row-cols-md-3 g-4">
+								<div class="col">
+									<div class="card h-100">
+										<a href="https://cec.gmu.edu/news/2024-04/ist-doctoral-students-sweep-innovation-week-2024-poster-competition" target="_blank">
+										<img src="img/press/240430.png" class="card-img-top" alt="The George Mason University Logo.">
+										</a>
+										<div class="card-body">
+											<h6 class="card-title fw-bold">IST doctoral students sweep at Innovation Week 2024 poster competition</h6>
+											<p class="card-text">News article about my presentation during CEC Innovation Week 2024.</p>
+											<a class="btn btn-dark float-end" href="https://cec.gmu.edu/news/2024-04/ist-doctoral-students-sweep-innovation-week-2024-poster-competition">Read News Article</a>
+										</div>
+										<div class="card-footer">
+											<small class="text-body-secondary"><i class="far fa-clock"></i> 05/01/2024<br /><i
+												class="far fa-pen-to-square"></i> College of Engineering and Computing <br /><i class="fa-regular fa-building"></i>
+												George Mason University</small>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card h-100">
+										<a href="archive/cars-keynote.pdf" target="_blank">
+										<img src="img/press/230830.jpg" class="card-img-top" alt="Poster for the 2023 Creative Activities and Research Symposium.">
+										</a>
+										<div class="card-body">
+											<h6 class="card-title fw-bold">Keynote Talk - 9th Annual Creative Activities & Research Symposium</h6>
+											<p class="card-text">Keynote Presentation given at the Summer Creative Activities & Research Symposium titled "My Graduate Journey + Reflecting on AI".</p>
+											<a class="btn btn-dark float-end" href="archive/cars-keynote.pdf">Read Post</a>
+										</div>
+										<div class="card-footer">
+											<small class="text-body-secondary"><i class="far fa-clock"></i> 08/10/2023<br /><i
+												class="far fa-pen-to-square"></i> Office of Undergraduate Research <br /><i class="fa-regular fa-building"></i>
+												Cal Poly Pomona</small>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card h-100">
+										<a href="https://www.sefi.be/2023/07/05/students-reflections-on-education-in-uncertain-times-technology-ai-and-engineering-ethics/" target="_blank">
+										<img src="img/press/230705.jpg" class="card-img-top" alt="European Society for Engineering Education (SEFI) logo."></a>
+										<div class="card-body">
+											<h6 class="card-title fw-bold">Students' Reflections on Education in Uncertain Times - Technology, AI, and Engineering Ethics</h6>
+											<p class="card-text">
+												An editorial on engaging with students about ethics and the future of engineering education.</p>
+											<a class="btn btn-dark float-end" href="https://www.sefi.be/2023/07/05/students-reflections-on-education-in-uncertain-times-technology-ai-and-engineering-ethics/">Read Editorial</a>
+										</div>
+										<div class="card-footer">
+											<small class="text-body-secondary"><i class="far fa-clock"></i> 07/05/2023<br /><i
+												class="far fa-pen-to-square"></i> Ethics Editorial <br /><i class="fa-regular fa-building"></i>
+												European Society for Engineering Education (SEFI)</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row row-cols-1 row-cols-md-3 g-4">
+								<div class="col">
+									<div class="card h-100">
+										<a href="https://news.iu.edu/live/news/28295-educational-fellowship-cohort-works-to-democratize" target="_blank">
+										<img src="img/press/230530.jpg" class="card-img-top" alt="ICICLE Democratizing AI logo."></a>
+										<div class="card-body">
+											<h6 class="card-title fw-bold">Educational fellowship cohort works to democratize AI</h6>
+											<p class="card-text">Article on my selection as an ICICLE Educational Fellow and my proposed project.</p>
+											<a class="btn btn-dark float-end" href="https://news.iu.edu/live/news/28295-educational-fellowship-cohort-works-to-democratize">Read Article</a>
+										</div>
+										<div class="card-footer">
+											<small class="text-body-secondary"><i class="far fa-clock"></i> 05/30/2023<br /><i
+												class="far fa-pen-to-square"></i> ICICLE National AI Institute<br /><i class="fa-regular fa-building"></i>
+												Ohio State University</small>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card h-100">
+										<a href="https://cec.gmu.edu/news/2022-08/developing-techno-ethical-mindset" target="_blank">
+										<img src="img/press/220824.jpg" class="card-img-top" alt="Image of the Nguyen Engineering Building at George Mason University."></a>
+										<div class="card-body">
+											<h6 class="card-title fw-bold">Developing a Techno-Ethical
+												Mindset Article</h6>
+											<p class="card-text">Article on my work with the Mason Tech Ethics project, where we talk about tech ethics with undergraduate students.</p>
+											<a class="btn btn-dark float-end" href="https://cec.gmu.edu/news/2022-08/developing-techno-ethical-mindset">Read Article</a>
+										</div>
+										<div class="card-footer">
+											<small class="text-body-secondary"><i class="far fa-clock"></i> 08/24/2022<br /><i
+												class="far fa-pen-to-square"></i> College of Engineering and Computing<br /><i
+												class="fa-regular fa-building"></i> George Mason University</small>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card h-100">
+										<a href="archive/0521_studentprofile.html" target="_blank">
+										<img src="img/press/200505.jpg" class="card-img-top" alt="Profile picture of Ashish."></a>
+										<div class="card-body">
+											<h6 class="card-title fw-bold">Graduate Researcher & Scholar Profile</h6>
+											<p class="card-text">Article on my experiences as an Undergraduate & Graduate Researcher, and what new students can learn from my experiences.</p>
+											<a class="btn btn-dark float-end" href="archive/0521_studentprofile.html">Read Article</a>
+										</div>
+										<div class="card-footer">
+											<small class="text-body-secondary"><i class="far fa-clock"></i> 05/30/2020<br /><i
+												class="far fa-pen-to-square"></i> Office of Undergraduate
+											Research<br /><i class="fa-regular fa-building"></i>
+											Cal Poly Pomona</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row row-cols-1 row-cols-md-3 g-4">
+								<div class="col">
+									<div class="card h-100">
+										<a href="https://polycentric.cpp.edu/2020/05/students-recognized-for-polytechnic-experiences-in-digital-magazine/" target="_blank">
+										<img src="img/press/200520.jpg" class="card-img-top" alt="PolyX Showcase Spring 2020 logo."></a>
+										<div class="card-body">
+											<h6 class="card-title fw-bold">PolyX Digital Magazine News Article</h6>
+											<p class="card-text">Article about the 1st CPP PolyX (Polytechnic Experiences) Magazine highlighting student research, creative and scholarship work in 2020.</p>
+											<a class="btn btn-dark float-end" href="https://polycentric.cpp.edu/2020/05/students-recognized-for-polytechnic-experiences-in-digital-magazine/">Read Article</a>
+										</div>
+										<div class="card-footer">
+											<small class="text-body-secondary"><i class="far fa-clock"></i> 05/20/2020<br /><i class="far fa-pen-to-square"></i> Office of Undergraduate
+											Research<br /><i class="fa-regular fa-building"></i>
+											Cal Poly Pomona</small>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card h-100">
+										<a href="archive/cpp-tech-transfer-story.pdf" target="_blank">
+										<img src="img/press/180520.jpg" class="card-img-top" alt="NASA Technology Transfer Program logo."></a>
+										<div class="card-body">
+											<h6 class="card-title fw-bold">NASA x CPP Technology Transfer Highlights</h6>
+											<p class="card-text">Article highlighting my internship experience and the partnerships between NASA's
+												Armstrong Flight Research Center and Cal Poly Pomona.
+												(originally posted at <a target="_blank"
+													href="https://technology-afrc.ndc.nasa.gov/">https://technology-afrc.ndc.nasa.gov/</a>)</p>
+											<a class="btn btn-dark float-end" href="archive/cpp-tech-transfer-story.pdf">Read Article</a>
+										</div>
+										<div class="card-footer">
+											<small class="text-body-secondary"><i class="far fa-clock"></i> 08/24/2022<br /><i
+												class="far fa-pen-to-square"></i> College of Engineering and Computing<br /><i
+												class="fa-regular fa-building"></i> George Mason University</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="float-end p-4">
+					<button class="btn btn-success" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="btn btn-success" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+
+
+			</div>
+		</section>
+		<hr class="m-0" />
+		<!-- Awards-->
+		<section class="uhsheesh-section" id="cafe">
+			<div class="uhsheesh-section-content">
+				<h2 class="mb-5">Creative Cafe</h2>
+				<h3 class="mb-5" id="journals">Photography</h3>
+				<div class="photo-gallery">
+					<div class="container">
+						<div class="row content">
+							<p>
+								Click on the images below to see the full image. All images are © Ashish Hingle
+							</p>
+						</div>
+						<div class="row photos">
+							<div class="col-sm-6 col-md-4 col-lg-3 item"><a
+								data-title="Taken with a Nikon D5300 at the Renwick Art Gallery in 2022."
+								href="img/photography/ip-8-web.jpg" data-lightbox="photos"><img class="img-fluid"
+								src="img/photography/ip-8-thumb.jpg"
+								alt="The words 'THIS MOMENT USED TO BE THE FUTURE' are lit up on a frame with a red background."></a>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 item"><a
+								data-title="Taken with a Nikon D5300 at the ACE Hotel, Palm Springs in 2022."
+								href="img/photography/ip-3-web.jpg" data-lightbox="photos"><img class="img-fluid"
+								src="img/photography/ip-3-thumb.jpg"
+								alt="Cactus growing near a wall with a cloudy sky in the background."></a>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 item"><a
+								data-title="Taken with a Samsung Galaxy S8 in Minneapolis, Minnesota in 2022."
+								href="img/photography/ip-4-web.jpg" data-lightbox="photos"><img class="img-fluid"
+								src="img/photography/ip-4-thumb.jpg"
+								alt="Downtown Minneapolis with a large blue building in the background."></a>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 item"><a
+								data-title="Taken with a Samsung Galaxy S8 at the Computer History Museum in Palo Alto in 2022."
+								href="img/photography/ip-5-web.jpg" data-lightbox="photos"><img class="img-fluid"
+								src="img/photography/ip-5-thumb.jpg"
+								alt="An older-looking computing device (Apple-1) with exposed board, chips, and capacitators."></a>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 item"><a
+								data-title="Taken with a Nikon D5300 at the Tidal Basin, Washington DC in 2022."
+								href="img/photography/ip-6-web.jpg" data-lightbox="photos"><img class="img-fluid"
+								src="img/photography/ip-6-thumb.jpg"
+								alt="Whitish-pink looking flowers in the foreground with more in the background"></a>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 item"><a
+								data-title="'Bowl of Soul' taken with a Samsung Galaxy S8 at The Naked Cafe, Sacramento California."
+								href="img/photography/ip-1-web.jpg" data-lightbox="photos"><img class="img-fluid"
+								src="img/photography/ip-1-thumb.jpg"
+								alt="Two buildings in the foreground with a blusish purple sky, and 2 pam trees to the right of the buildings."></a>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 item"><a
+								data-title="Taken with a Samsung Galaxy S8 at Cal Poly Pomona in 2018."
+								href="img/photography/ip-7-web.jpg" data-lightbox="photos"><img class="img-fluid"
+								src="img/photography/ip-7-thumb.jpg"
+								alt="Two buildings in the foreground with a blusish purple sky, and 2 pam trees to the right of the buildings."></a>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 item"><a
+								data-title="Taken with a a Nikon D5300 at Big Bear Lake in 2017."
+								href="img/photography/ip-2-web.jpg" data-lightbox="photos"><img class="img-fluid"
+								src="img/photography/ip-2-thumb.jpg"
+								alt="Two buildings in the foreground with a blusish purple sky, and 2 pam trees to the right of the buildings."></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		</div>
+		<!-- JavaScript Bootstrap Bundle with Popper --> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+		<!-- Lightbox Scripts by Lokesh Dhakar: https://lokeshdhakar.com/ -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="css/lightbox/lightbox.min.js"></script>
+		<!-- Script for Masonry https://masonry.desandro.com/ -->
+		<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 	</body>
+	<!-- Script for highlighting the section on Navbar -->
+	<script>
+		window.addEventListener('DOMContentLoaded', event => {
+		
+		// Activate Bootstrap scrollspy on the main nav element
+		const sideNav = document.body.querySelector('#sideNav');
+		if (sideNav) {
+			new bootstrap.ScrollSpy(document.body, {
+				target: '#sideNav',
+				smoothScroll: true,
+				rootMargin: '0px 0px -40%',
+			});
+		};
+		
+		// Collapse responsive navbar when toggler is visible
+		const navbarToggler = document.body.querySelector('.navbar-toggler');
+		const responsiveNavItems = [].slice.call(
+			document.querySelectorAll('#navbarResponsive .nav-link')
+		);
+		responsiveNavItems.map(function (responsiveNavItem) {
+			responsiveNavItem.addEventListener('click', () => {
+				if (window.getComputedStyle(navbarToggler).display !== 'none') {
+					navbarToggler.click();
+				}
+			});
+		});
+		});
+	</script>
 </html>
