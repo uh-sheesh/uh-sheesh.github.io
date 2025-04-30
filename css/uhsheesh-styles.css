@@ -138,6 +138,10 @@ p.lead {
 
 @media (min-width: 992px) {
 
+	#subpage {
+		border-left: solid 2.5rem #f8f9fa;
+	}
+
   .landing-body {
     padding-top: 0;
     padding-left: 17rem;
