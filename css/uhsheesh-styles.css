@@ -134,6 +134,9 @@ p.lead {
 } */
 
 
+#sideNav .navbar-collapse .navbar-nav .secondary-nav .nav-item {
+  
+}
 
 
 @media (min-width: 992px) {
@@ -156,7 +159,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 18rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
