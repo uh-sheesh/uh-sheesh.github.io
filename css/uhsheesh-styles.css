@@ -62,6 +62,11 @@ h1, .h1 {
   font-weight: 600;
 }
 
+.bl-no-under {
+  color: #000000 !important;
+  text-decoration:wavy !important;
+}
+
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
