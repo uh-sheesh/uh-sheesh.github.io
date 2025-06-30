@@ -598,8 +598,6 @@
 					<span class="visually-hidden">Next</span>
 					</button>
 				</div>
-
-
 			</div>
 		</section>
 		<hr class="m-0" />
@@ -744,6 +742,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 		<script src="css/lightbox/lightbox.min.js"></script>
 		<!-- Script for Masonry https://masonry.desandro.com/ -->
+		<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 	</body>
 	<!-- Script for highlighting the section on Navbar -->
@@ -772,6 +771,20 @@
 				}
 			});
 		});
+		});
+	</script>
+	<!-- Script to force Masonry to reload images properly -->
+	<script>
+		// init Masonry
+		var $grid = $('.grid').masonry({
+		itemSelector: '.grid-item',
+		percentPosition: true,
+		columnWidth: '.grid-sizer'
+		});
+
+		// layout Masonry after each image loads
+		$grid.imagesLoaded().progress( function() {
+		$grid.masonry();
 		});
 	</script>
 </html>
