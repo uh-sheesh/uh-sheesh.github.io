@@ -129,11 +129,24 @@ a:hover{
 }
 
 @media (max-width: 575.98px){
+  .site-nav{
+    justify-content: center;
+  }
+  .more-btn.more-btn-outline{
+    padding: 0.5rem 0.9rem;
+    font-size: 0.65rem;
+  }
   .site-nav .nav-list{
-    gap: 0.8rem;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding-right: 20px;
+    gap: 0.55rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .site-nav .nav-link{
+    font-size: 0.55rem;
+    letter-spacing: 0.04em;
+  }
+  .site-nav .sub-link-list a{
+    font-size: 0.53rem;
   }
 }
 
