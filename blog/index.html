@@ -1,166 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Required meta tags --> 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Hi! My name is Ashish! I am a PhD student in IT in the College of Engineering and Computing at George Mason University.">
-		<meta name="author" content="Ashish Hingle">
-		<title>Blog</title>
-		<!-- Favicon's for multiple screen sizes --> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Blog</title>
+		<!-- Favicon's for multiple screen sizes -->
 		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
 		<link rel="manifest" href="../img/favicon/site.webmanifest">
-		<!-- Font Awesome icons (free version)-->
-		<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-		<!-- Google fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-		<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-		<!-- Core theme CSS (includes Bootstrap)-->
-		<link href="../css/uhsheesh-styles.css" rel="stylesheet" />
-		<!-- Bootstrap CSS --> 
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-		<!-- Fonts -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
-		<!-- Canonical Selector --> 
-		<link rel="canonical" href="https://www.uh-sheesh.com/" />
+		<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 		<!-- Gallery Lightbox Stylesheet by Lokesh Dhakar: https://lokeshdhakar.com/-->
-		<link href="../css/lightbox/lightbox.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox3/dist/lightbox3.min.css">
+		<!-- Core theme CSS -->
+		<link rel="stylesheet" href="../css/styles.css">
+		<!-- Meta description -->
+		<meta name="description" content="A notepad of posts by Hingle on research, teaching, and life as an academic.">
+		<!-- Open Graph -->
+		<meta property="og:title" content="Blog — Ashish Hingle">
+		<meta property="og:description" content="A notepad of posts by Hingle on research, teaching, and life as an academic.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.uh-sheesh.com/blog/">
+		<meta property="og:image" content="https://www.uh-sheesh.com/img/profile-sketch.png">
 	</head>
-	<body id="subpage">
-		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="subnav">
-			<div class="container-fluid">
-				<a class="navbar-brand p-3 fw-bold" href="../index.html">Ashish Hingle</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav justify-content-end">
-						<a class="nav-link p-3 btn btn-light" href="../index.html#cafe">Return to Main Page</a>
-						<a class="nav-link p-3 btn btn-light" href="../index.html#research">Research</a>
-						<a class="nav-link p-3 btn btn-light" href="../index.html#projects">Projects</a>
-						<a class="nav-link p-3 btn btn-light" href="../index.html#service">Service</a>
-						<a class="nav-link p-3 btn btn-light" href="../index.html#press">Press</a>
-						<a class="nav-link p-3 btn btn-light active" href="../index.html#cafe">Creative Cafe</a>
-					</div>
-				</div>
-			</div>
+	<body>
+		<a class="skip-nav" href="#blog">Skip to main content</a>
+		<a id="page-top"></a>
+		<!-- ================= NAV ================= -->
+		<nav class="site-nav" id="siteNav">
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a class="nav-link nav-home" href="../index.html" aria-label="Return to home">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 11.5L12 4L21 11.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10V20H19V10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#research">Research</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#teaching">Teaching</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#press">Press</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="../index.html#creative-cafe">Creative Cafe</a>
+					<ul class="sub-link-list">
+						<li><a href="index.html" class="active">Blog</a></li>
+						<li><a href="../index.html#photo">Photography</a></li>
+					</ul>
+				</li>
+			</ul>
 		</nav>
-		<!-- Page Content-->
-		<div class="container-fluid p-2 mt-5">
-			<h1 class="mb-0 fw-bold display-4">
-				Notepad
-			</h1>
-			<h4>A blog of random posts</h4>
-			
-			<!-- Masonry Gallery -->
-			<div class="row grid" id="gallery">
-				<div class="col-sm-6 col-lg-3 mb-4">
-					<a href="070125-phd-end.html" class="bl-no-under">
-						<img src="../img/blog/070125-grad.jpeg" class="rounded img-fluid" alt="A scoreboard in the Eaglebank Arena with the words 'GM Win'.">
-						<p class="card-text p-2">
-							<span class="small">07.01.2025</span>
-							<span> • </span>
-							<span class="fw-bold">End of my PhD Journey</span>
-							<span> • </span>
-							<span class="small em">A few musings on wrapping up years of research and learning.</span>
-						</p>
-					</a>
+		<!-- ================= PAGE HEADER ================= -->
+		<header class="page-header">
+			<h1>My Blog</h1>
+		</header>
+		<main class="page-body blog-post" id="blog">
+			<p class="gallery-subtitle">A blog of random posts</p>
+			<div class="blog-list">
+				<a href="070125-phd-end.html" class="blog-row">
+				<div class="blog-row-img-wrap">
+					<img src="../img/blog/070125-grad.jpeg" alt="A scoreboard in the Eaglebank Arena with the words 'GM Win'.">
 				</div>
-				<div class="col-sm-6 col-lg-3 mb-4">
-					<a href="053124-gapsa.html" class="bl-no-under">
-						<img src="../img/blog/053124-gapsa.jpeg" class="rounded img-fluid" alt="Two brochures in a hand.">
-						<p class="card-text p-2">
-							<span class="small">05.31.2024</span>
-							<span> • </span>
-							<span class="fw-bold">Time as a GAPSA Officer</span>
-							<span> • </span>
-							<span class="small em">Some thoughts on serving Mason graduate students.</span>
-						</p>
-					</a>
+				<div class="blog-row-body">
+					<p class="blog-row-date">
+						<span class="hl-kicker hl-kicker-creative">Blog Post</span>
+						&middot; 07.01.2025
+					</p>
+					<p class="blog-row-title">End of my PhD Journey</p>
+					<p class="blog-row-desc">A few musings on wrapping up years of research and learning.</p>
 				</div>
-				<div class="col-sm-6 col-lg-3 mb-4">
-					<a href="122023-icicle.html" class="bl-no-under">
-						<img src="../img/blog/122023-icicle.jpeg" class="rounded img-fluid" alt="A man standing in front of a slideshow presentation, with a slide titled 'Student Discourse: I learned...'.">
-						<p class="card-text p-2">
-							<span class="small">12.20.2023</span>
-							<span> • </span>
-							<span class="fw-bold">ICICLE Education Fellow Experience</span>
-							<span> • </span>
-							<span class="small em">A few thoughts from the fellowship.</span>
-						</p>
-					</a>
+				<span class="blog-row-arrow">&rarr;</span>
+				</a>
+				<a href="053124-gapsa.html" class="blog-row">
+				<div class="blog-row-img-wrap">
+					<img src="../img/blog/053124-gapsa.jpeg" alt="Two brochures in a hand.">
 				</div>
-				<div class="col-sm-6 col-lg-3 mb-4">
-					<a href="090120-phd-start.html" class="bl-no-under">
-						<img src="../img/blog/090120-phd.jpg" class="rounded img-fluid" alt="A large building with the words 'ENGINEERING' on the right, infront of a green lawn.">
-						<p class="card-text p-2">
-							<span class="small">09.01.2020</span>
-							<span> • </span>
-							<span class="fw-bold">Start of my PhD Journey</span>
-							<span> • </span>
-							<span class="small em">New horizons and new learning!</span>
-						</p>
-					</a>
+				<div class="blog-row-body">
+					<p class="blog-row-date">
+						<span class="hl-kicker hl-kicker-creative">Blog Post</span>
+						&middot; 05.31.2024
+					</p>
+					<p class="blog-row-title">Time as a GAPSA Officer</p>
+					<p class="blog-row-desc">Some thoughts on serving Mason graduate students.</p>
 				</div>
+				<span class="blog-row-arrow">&rarr;</span>
+				</a>
+				<a href="122023-icicle.html" class="blog-row">
+				<div class="blog-row-img-wrap">
+					<img src="../img/blog/122023-icicle.jpeg" alt="A man standing in front of a slideshow presentation, with a slide titled 'Student Discourse: I learned...'.">
+				</div>
+				<div class="blog-row-body">
+					<p class="blog-row-date">
+						<span class="hl-kicker hl-kicker-creative">Blog Post</span>
+						&middot; 12.20.2023
+					</p>
+					<p class="blog-row-title">ICICLE Education Fellow Experience</p>
+					<p class="blog-row-desc">A few thoughts from the fellowship.</p>
+				</div>
+				<span class="blog-row-arrow">&rarr;</span>
+				</a>
+				<a href="090120-phd-start.html" class="blog-row">
+				<div class="blog-row-img-wrap">
+					<img src="../img/blog/090120-phd.jpg" alt="A large building with the words 'ENGINEERING' on the right, in front of a green lawn.">
+				</div>
+				<div class="blog-row-body">
+					<p class="blog-row-date">
+						<span class="hl-kicker hl-kicker-creative">Blog Post</span>
+						&middot; 09.01.2020
+					</p>
+					<p class="blog-row-title">Start of my PhD Journey</p>
+					<p class="blog-row-desc">New horizons and new learning!</p>
+				</div>
+				<span class="blog-row-arrow">&rarr;</span>
+				</a>
 			</div>
+		</main>
+		<footer class="site-footer">
+			<p>All Rights, Materials, Opinions: Ashish Hingle &copy; <span id="copyrightYear"></span></p>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/lightbox3/dist/lightbox3.min.js">
+		</script>
+		<script>
+			(function () {
+			  var nav = document.getElementById('siteNav');
+			  var threshold = 60;
 			
-			<div class="row">
-				<div class="col-md-12">
-					<footer>
-						<p style="text-align:center;">All Rights, Materials, Opinions © Ashish Hingle</p>
-					</footer>
-				</div>
-			</div>
-		</div>
-		<!-- JavaScript Bootstrap Bundle with Popper --> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-		<!-- Lightbox Scripts by Lokesh Dhakar: https://lokeshdhakar.com/ -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-		<script src="../css/lightbox/lightbox.min.js"></script>
-		<!-- Script for Masonry https://masonry.desandro.com/ -->
-		<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+			  function updateNav() {
+			    if (window.scrollY > threshold) {
+			      nav.classList.add('nav-visible');
+			    } else {
+			      nav.classList.remove('nav-visible');
+			    }
+			  }
+			
+			  window.addEventListener('scroll', updateNav, { passive: true });
+			  updateNav();
+			})();
+		</script>
 	</body>
-	<!-- Script for highlighting the section on Navbar -->
-	<script>
-		window.addEventListener('DOMContentLoaded', event => {
-		
-		// Activate Bootstrap scrollspy on the main nav element
-		const sideNav = document.body.querySelector('#sideNav');
-		if (sideNav) {
-			new bootstrap.ScrollSpy(document.body, {
-				target: '#sideNav',
-				smoothScroll: true,
-				rootMargin: '0px 0px -40%',
-			});
-		};
-		
-		// Collapse responsive navbar when toggler is visible
-		const navbarToggler = document.body.querySelector('.navbar-toggler');
-		const responsiveNavItems = [].slice.call(
-			document.querySelectorAll('#navbarResponsive .nav-link')
-		);
-		responsiveNavItems.map(function (responsiveNavItem) {
-			responsiveNavItem.addEventListener('click', () => {
-				if (window.getComputedStyle(navbarToggler).display !== 'none') {
-					navbarToggler.click();
-				}
-			});
-		});
-		});
-	</script>
-	<!-- Script to force Masonry to reload images properly -->
-	<script>
-		// init Masonry
-		var $grid = $('#gallery').masonry({
-		// options...
-		});
-		// layout Masonry after each image loads
-		$grid.imagesLoaded().progress( function() {
-		$grid.masonry('layout');
-		});
-	</script>
 </html>

@@ -1,855 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Required meta tags --> 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Hi! My name is Ashish! I am a PhD student in IT in the College of Engineering and Computing at George Mason University.">
-		<meta name="author" content="Ashish Hingle">
-		<title>Mason Technology Ethics</title>
-		<!-- Favicon's for multiple screen sizes --> 
-		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-		<link rel="manifest" href="img/favicon/site.webmanifest">
-		<!-- Font Awesome icons (free version)-->
-		<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-		<!-- Google fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-		<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-		<!-- Core theme CSS (includes Bootstrap)-->
-		<link href="../css/uhsheesh-styles.css" rel="stylesheet" />
-		<!-- Bootstrap CSS --> 
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-		<!-- Fonts -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Developer Communities Research</title>
+		<!-- Favicon's for multiple screen sizes -->
+		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="../img/favicon/site.webmanifest">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
-		<!-- Canonical Selector --> 
-		<link rel="canonical" href="https://www.uh-sheesh.com/" />
-		<!-- Gallery Lightbox Stylesheet by Lokesh Dhakar: https://lokeshdhakar.com/-->
-		<link href="css/lightbox/lightbox.min.css" rel="stylesheet">
-		<style>
-			#design, #implement, #assess, #pubs {scroll-margin: 5rem;}
-		</style>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/styles.css">
+		<!-- Meta description -->
+		<meta name="description" content="A research project analyzing network and collaborative behavior in developer communities across platforms like Reddit and GitHub.">
+		<!-- Open Graph -->
+		<meta property="og:title" content="Developer Communities Research — Ashish Hingle">
+		<meta property="og:description" content="A research project analyzing network and collaborative behavior in developer communities across platforms like Reddit and GitHub.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.uh-sheesh.com/projects/dev-com-analysis.html">
+		<meta property="og:image" content="https://www.uh-sheesh.com/img/projects/network-analysis/header.jpg">
 	</head>
-	<body id="page-top">
-		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="subnav">
-			<div class="container-fluid">
-				<a class="navbar-brand p-3" href="../index.html">Ashish Hingle</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav justify-content-end">
-						<a class="nav-link p-3 btn btn-light" href="../index.html">Return to Main Page</a>
-						<a class="nav-link p-3 btn btn-light" href="../index.html#research">Research</a>
-						<a class="nav-link p-3 btn btn-light active" href="../index.html#projects">Projects</a>
-						<a class="nav-link p-3 btn btn-light" href="../index.html#service">Service</a>
-						<a class="nav-link p-3 btn btn-light" href="../index.html#press">Press</a>
-						<a class="nav-link p-3 btn btn-light" href="../index.html#cafe">Creative Cafe</a>
-					</div>
-				</div>
-			</div>
+	<body>
+		<a class="skip-nav" href="#project">Skip to main content</a>
+		<a id="page-top"></a>
+		<!-- ================= NAV ================= -->
+		<nav class="site-nav" id="siteNav">
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a class="nav-link nav-home" href="../index.html" aria-label="Return to home">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 11.5L12 4L21 11.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10V20H19V10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#research">Research</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#teaching">Teaching</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="../index.html#projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#press">Press</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#creative-cafe">Creative Cafe</a>
+				</li>
+			</ul>
 		</nav>
-		<!-- Page Content-->
-		<div class="container-fluid p-2 mt-5">
-			<section class="resume-section" id="research">
-				<div class="resume-section-content p-5">
-					<div class="row">
-						<div class="col-md-12">
-							<h1>Network & Collaborative Behavior Analysis in Developer Communities
-							</h1>
-							<hr class="divider" />
-						</div>
-						<div class="col-md-12 img-style">
-							<img src="../img/projects/network-analysis/header.jpg"
-								alt="An image depicting the final network mapping. 14 concentric circles with lines running between them."
-								width="100%">
-						</div>
-						<hr class="divider-spaced">
-						<div class="col-md-12">
-							<p>The project has been split into different sections for discussion of the data collection,
-								approach, analysis, interesting results, and more:</p>
-							<ol class="highlight">
-								<a href="#scope">
-									<li>Scope, Data, and Preprocessing</li>
-								</a>
-								<a href="#analysis">
-									<li>Analysis and Findings</li>
-								</a>
-								<ul style="margin-bottom: 0px;">
-									<a href="#analysis1">
-										<li>Commonalities among Subreddit Communities</li>
-									</a>
-									<a href="#analysis2">
-										<li>Influencer Profiles</li>
-									</a>
-									<a href="#analysis3">
-										<li>What are users posting about? Our Topic Modeling Methodology</li>
-									</a>
-								</ul>
-								<a href="#overall">
-									<li>Overall findings</li>
-								</a>
-							</ol>
-						</div>
-						<hr class="divider-spaced">
-						<div class="col-md-12">
-							<p>In general, communities form around common interests and bring people together. Online
-								communities can take many shapes and forms in today's interconnected work. More specifically,
-								communities may allow people to interact in social groups, and contribute to shared experiences.
-							<p>Developer communities are no different; groups of likeminded individuals come together to learn,
-								ask, debug, and build programs and code for a variety of purposes, using a variety of languages.
-								These communities exist on sites such as Reddit, StackOverflow, and Google Groups (to name a
-								few). Developer and programming communities can have a more macro approach (focusing on what
-								good programming looks like, accessibility, and security across programming concepts in
-								general), or a micro approach (usually focused on a specific language). In these micro
-								communities are interesting nuances:
-							<ul>
-								<li>Are users often part of multiple communities? What do they talk about in each
-									community?</li>
-								<li>Are users predominantly asking for technical help?</li>
-								<li>Are users talking abstractly about the programming languages?</li>
-								<li>Who are the “influencers” in these types of social networks?</li>
-							</ul>
-							</p>
-							<p>For this project, we explored the interactions between different programming communities on one
-								particular platform: Reddit. We wanted to learn more about the micro communities, and what they
-								can tell us about developer and programming online communities. We also wanted to determine
-								influencers and topics of interests in selected subreddits and find similarities between
-								selected subreddits. To that end, our research questions were:
-							<ol>
-								<li>
-									Which subreddits have common users, who do they interact with, and who are important users
-									in the network?
-								</li>
-								<li>
-									What kind of posts (questions, news, etc.) do users post on each subreddit?
-								</li>
-							</ol>
-							</p>
-						</div>
-						<div class="col-md-12">
-							<hr />
-							<h2 id="scope">Scope, Data, and Preprocessing</h2>
-							<hr class="divider-spaced">
-						</div>
-						<div class="col-md-12">
-							<p>We collected data from 14 subreddits below using the Push Shift API. We collected 312 851 records
-								during the date range 1/1/2021 - 6/30/2021.</p>
-							<div style="background-color:black; padding: 30px; text-align: center; margin-bottom: 20px;">
-								<p>
-									C_Programming, COBOL, Fortran, Haskell, HTML, HTML5, JavaScript, LaTeX, learnjava,
-									learnpython, LISP, MATLAB, perl, Rlanguage</p>
-							</div>
-							<p>Next, we preprocessed the data by removing any records that were missing or incomplete, such as
-								removing “deleted”
-								authors, and splitting the records into datasheets with edges and nodes to be able to do network
-								analyses.</p>
-							<p>We focused on aggregated analysis vs. temporal analysis for the project. The initial batch of
-								languages we selected was
-								based on languages we found in syllabi at George Mason University, but in general these
-								languages were picked randomly
-								for interest. We also made sure to include languages on the spectrum of newness and maturity. We
-								selected the most
-								active subreddit for each language, and excluded “dead” languages (i.e., Algol, APL).</p>
-						</div>
-						<div class="col-md-12">
-							<hr />
-							<h2 id="analysis">Analysis and Findings</h2>
-							<hr class="divider-spaced">
-						</div>
-						<h4 id="analysis1">
-							Commonalities among Subreddit Communities
-						</h4>
-						<hr />
-						<p>
-							Below is the final network graph thatw as created for all the networks.
-						</p>
-						<div class="col-md-10 offset-md-1 img-style">
-							<img src="../img/projects/network-analysis/network-graph.jpg"
-								alt="An image depicting the final network mapping. 14 concentric circles with lines running between them."
-								width="100%">
-						</div>
-			
-						<p>
-							We initially wanted to see what else we could learn about our users mainly through centrality
-							measures and PageRank. We spent some time identifying each community within our map and labeled them
-							as such. If you remember from the table we showed earlier, Python and JavaScript subreddits account
-							for a large number of interactions between users.
-						</p>
-						<p>
-							If you notice within each community, there are concentric circles moving outwards from the center.
-							Users in the center interact with that subreddit often, and those on the outside do so less. Those
-							right on the edge of the circle often only have 1 post/comment (extremely low engagement).
-						</p>
-			
-						<div class="col-md-10 offset-md-1" style="padding:30px;">
-							<h5 style="text-align: center;">Programming Subreddit Descriptive Data
-							</h5>>
-							<table class="table">
-								<thead style="background-color:white; color: black;">
-									<tr>
-										<th scope="col">&nbsp;</p>
-										</th>
-										<th scope="col">Created Date</th>
-										<th scope="col"># of Subs</br>(Jul 2021)</th>
-										<th scope="col">Daily Comments</br>(Jul 2021)</th>
-										<th scope="col">Total Posts</br>(01/21 - 06/21)</th>
-										<th scope="col">Users X-posting</br>(01/21 - 06/21)</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<p><strong><em>C_Programming</em></strong></p>
-										</td>
-										<td>
-											<p>3/27/2008</p>
-										</td>
-										<td>
-											<p>112000</p>
-										</td>
-										<td>
-											<p>78</p>
-										</td>
-										<td>
-											<p>4278</p>
-										</td>
-										<td>
-											<p>727</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>COBOL</em></strong></p>
-										</td>
-										<td>
-											<p>6/5/2009</p>
-										</td>
-										<td>
-											<p>2294</p>
-										</td>
-										<td>
-											<p>3</p>
-										</td>
-										<td>
-											<p>133</p>
-										</td>
-										<td>
-											<p>36</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>Fortran</em></strong></p>
-										</td>
-										<td>
-											<p>9/29/2009</p>
-										</td>
-										<td>
-											<p>5989</p>
-										</td>
-										<td>
-											<p>11</p>
-										</td>
-										<td>
-											<p>264</p>
-										</td>
-										<td>
-											<p>99</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>Haskell</em></strong></p>
-										</td>
-										<td>
-											<p>1/25/2008</p>
-										</td>
-										<td>
-											<p>67417</p>
-										</td>
-										<td>
-											<p>65</p>
-										</td>
-										<td>
-											<p>2068</p>
-										</td>
-										<td>
-											<p>320</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>HTML</em></strong></p>
-										</td>
-										<td>
-											<p>9/5/2009</p>
-										</td>
-										<td>
-											<p>34,545</p>
-										</td>
-										<td>
-											<p>4</p>
-										</td>
-										<td>
-											<p>1284</p>
-										</td>
-										<td>
-											<p>271</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>HTML5</em></strong></p>
-										</td>
-										<td>
-											<p>9/22/2009</p>
-										</td>
-										<td>
-											<p>39,348</p>
-										</td>
-										<td>
-											<p>1</p>
-										</td>
-										<td>
-											<p>524</p>
-										</td>
-										<td>
-											<p>203</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>JavaScript</em></strong></p>
-										</td>
-										<td>
-											<p>1/25/2008</p>
-										</td>
-										<td>
-											<p>1720113</p>
-										</td>
-										<td>
-											<p>57</p>
-										</td>
-										<td>
-											<p>7008</p>
-										</td>
-										<td>
-											<p>618</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>LaTeX</em></strong></p>
-										</td>
-										<td>
-											<p>3/4/2008</p>
-										</td>
-										<td>
-											<p>35613</p>
-										</td>
-										<td>
-											<p>5</p>
-										</td>
-										<td>
-											<p>1706</p>
-										</td>
-										<td>
-											<p>388</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>learnjava</em></strong></p>
-										</td>
-										<td>
-											<p>1/27/2011</p>
-										</td>
-										<td>
-											<p>116403</p>
-										</td>
-										<td>
-											<p>53</p>
-										</td>
-										<td>
-											<p>3341</p>
-										</td>
-										<td>
-											<p>528</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>learnpython</em></strong></p>
-										</td>
-										<td>
-											<p>10/2/2009</p>
-										</td>
-										<td>
-											<p>571031</p>
-										</td>
-										<td>
-											<p>525</p>
-										</td>
-										<td>
-											<p>24213</p>
-										</td>
-										<td>
-											<p>1360</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>LISP</em></strong></p>
-										</td>
-										<td>
-											<p>1/25/2008</p>
-										</td>
-										<td>
-											<p>33291</p>
-										</td>
-										<td>
-											<p>43</p>
-										</td>
-										<td>
-											<p>824</p>
-										</td>
-										<td>
-											<p>182</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>MATLAB</em></strong></p>
-										</td>
-										<td>
-											<p>8/15/2009</p>
-										</td>
-										<td>
-											<p>43046</p>
-										</td>
-										<td>
-											<p>18</p>
-										</td>
-										<td>
-											<p>2095</p>
-										</td>
-										<td>
-											<p>301</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>perl</em></strong></p>
-										</td>
-										<td>
-											<p>1/25/2008</p>
-										</td>
-										<td>
-											<p>15149</p>
-										</td>
-										<td>
-											<p>7</p>
-										</td>
-										<td>
-											<p>501</p>
-										</td>
-										<td>
-											<p>76</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>Rlanguage</em></strong></p>
-										</td>
-										<td>
-											<p>2/11/2011</p>
-										</td>
-										<td>
-											<p>26494</p>
-										</td>
-										<td>
-											<p>8</p>
-										</td>
-										<td>
-											<p>1389</p>
-										</td>
-										<td>
-											<p>251</p>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-			
-						<div class="col-md-12">
-							<p>We realized the importance that the sizes each subreddit played in the conversation. The number
-								of posts and subs differ between the subreddits. The table above shows the number of
-								subscribers, comments per day, total posts within the date range of our dataset and the number
-								of users who cross-posted to another subreddit. JavaScript was by far the largest, and Cobol the
-								smallest in terms of subscribers. Additionally, based on the 3rd column, we can see that users
-								posted more
-								in Python everyday on average than all the other subreddits.</p>
-							<p>From the network analysis we conducted, Python also had the largest number of posts, and cross
-								posts. After having established that there were users that were cross posting across subreddits,
-								our next step was to figure out what the top cross-posted subreddits were for each user within a
-								subreddit.</p>
-							<p>One of our hypotheses was about cross-posting between subreddits based on the nature of the
-								language. For example, HTML and JavaScript are often used together for front-end web-design, so
-								it would make sense that there would be shared users here.</p>
-							<p>However, what we discovered was that Python seems to be the strongest link between all the
-								subreddits, having a high PageRank score on our graph, and also the largest amount users
-								bridging junctions between their specific subreddit and the python subreddit.</p>
-						</div>
-			
-						<div class="col-md-10 offset-md-1" style="padding:30px;">
-							<h5 style="text-align: center;">Top 3 Connected Subreddits to Each Programming Language Subreddit
-							</h5>>
-							<table class="table">
-								<thead style="background-color:white; color: black;">
-									<tr>
-										<th scope="col">Language</th>
-										<th scope="col">Top 1</th>
-										<th scope="col">Top 2</th>
-										<th scope="col">Top 3</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<p><strong><em>C_Programming</em></strong></p>
-										</td>
-										<td>
-											<p>learnpython</p>
-										</td>
-										<td>
-											<p>javascript</p>
-										</td>
-										<td>
-											<p>learnjava</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>COBOL</em></strong></p>
-										</td>
-										<td>
-											<p>learnpython</p>
-										</td>
-										<td>
-											<p>C_Programming</p>
-										</td>
-										<td>
-											<p>javascript</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>Fortran</em></strong></p>
-										</td>
-										<td>
-											<p>C_Programming</p>
-										</td>
-										<td>
-											<p>LaTeX</p>
-										</td>
-										<td>
-											<p>learnpython</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>Haskell</em></strong></p>
-										</td>
-										<td>
-											<p>C_Programming</p>
-										</td>
-										<td>
-											<p>lisp</p>
-										</td>
-										<td>
-											<p>learnpython</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>HTML</em></strong></p>
-										</td>
-										<td>
-											<p>learnpython</p>
-										</td>
-										<td>
-											<p>javascript</p>
-										</td>
-										<td>
-											<p>html_5</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>HTML5</em></strong></p>
-										</td>
-										<td>
-											<p>javascript</p>
-										</td>
-										<td>
-											<p>HTML</p>
-										</td>
-										<td>
-											<p>learnpython</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>JavaScript</em></strong></p>
-										</td>
-										<td>
-											<p>learnpython</p>
-										</td>
-										<td>
-											<p>C_Programming</p>
-										</td>
-										<td>
-											<p>html_5</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>LaTeX</em></strong></p>
-										</td>
-										<td>
-											<p>learnpython</p>
-										</td>
-										<td>
-											<p>matlab</p>
-										</td>
-										<td>
-											<p>C_Programming</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>learnjava</em></strong></p>
-										</td>
-										<td>
-											<p>learnpython</p>
-										</td>
-										<td>
-											<p>C_Programming</p>
-										</td>
-										<td>
-											<p>javascript</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>learnpython</em></strong></p>
-										</td>
-										<td>
-											<p>learnjava</p>
-										</td>
-										<td>
-											<p>C_Programming</p>
-										</td>
-										<td>
-											<p>javascript</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>LISP</em></strong></p>
-										</td>
-										<td>
-											<p>haskell</p>
-										</td>
-										<td>
-											<p>C_Programming</p>
-										</td>
-										<td>
-											<p>learnpython</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>MATLAB</em></strong></p>
-										</td>
-										<td>
-											<p>learnpython</p>
-										</td>
-										<td>
-											<p>LaTeX</p>
-										</td>
-										<td>
-											<p>C_Programming</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>perl</em></strong></p>
-										</td>
-										<td>
-											<p>C_Programming</p>
-										</td>
-										<td>
-											<p>learnpython</p>
-										</td>
-										<td>
-											<p>javascript</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p><strong><em>Rlanguage</em></strong></p>
-										</td>
-										<td>
-											<p>learnpython</p>
-										</td>
-										<td>
-											<p>LaTeX</p>
-										</td>
-										<td>
-											<p>matlab</p>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-			
-						<div class="col-md-12">
-							<p>We found some interesting data to back up the claim of Python's predominance. The table on the
-								above the top 3 other subreddits that users from a specific subreddit posted to. So, for C
-								Programming, which is the first row, users cross-posted most to python, JavaScript, and finally
-								java.</p>
-							<p>The users in 8 of our 14 subreddits cross-posted most to Python. In fact, Python was ranked
-								within the top 3 of every subreddit we analyzed. This is interesting and our hypothesis based on
-								reviewing our data for this is kind how ubiquitous Python has become with programming today. It
-								is taught in schools, bootcamps, self-learning courses, has a relatively simpler learning curve
-								compared to other languages, is used in industry and interfaces well with other languages.</p>
-							<p>On closer analysis, we found that much of the discussion in more mature language subreddits such
-								as Cobol, Fortran, and lisp involved troubleshooting how to get Python functionalities to
-								interface with their legacy code/hardware, in addition to language migration queries.</p>
-						</div>
-			
-						<hr />
-						<h4 id="analysis2">
-							Influencer Profiles
-						</h4>
-						<hr />
-			
-						<div class="col-md-12">
-							<p>We calculated several centrality measures for the users in the network, including the
-								betweenness, closeness, and PageRank. Of our top influencers, we found several that had
-								interesting profiles. Overall, they interact with users often helping with ways to get the users
-								code working correctly, and being able to provide additional resources that would otherwise not
-								have been available to the users. Some of these top influencers also link to other content on
-								other sites, so they are marginally aware of cross posting across sites here too.</p>
-							<p>We found 1 user with an extremely high score for betweenness, and page rank, and a high measure
-								for closeness, and the largest degree of all our users. This user as it turned out, was actually
-								a bot known as <em>AutoModerator</em>, that is often used by subreddits as a management tool.
-								The intention of spreading shared community guidelines, and rules across multiple communities
-								seems to work, and if we need to spread a contagion type of message across all 14 subreddits,
-								this user would be our pick.</p>
-			
-						</div>
-			
-						<hr />
-						<h4 id="analysis3">
-							What are users posting about? Our Topic Modeling Methodology
-						</h4>
-						<hr />
-			
-						<div class="col-md-4 offset-md-1 img-style">
-							<img src="../img/projects/network-analysis/word-graph-1.jpg"
-								alt="A word cloud representing the most common words across subreddits." width="100%">
-						</div>
-			
-						<div class="col-md-4 offset-md-1 img-style">
-							<img src="../img/projects/network-analysis/word-graph-2.jpg"
-								alt="A word cloud representing the most common words across subreddits with further processing."
-								width="100%">
-						</div>
-			
-						<div class="col-md-12">
-							<p>For our topic modelling attempt, we used Latent Dirichlet Allocation (LDA) to create a set amount
-								of bins, and attempt to sort through the text and create general grouped topics. We expected ~4
-								topics based on trial and error with empirical observation of several subreddits: Tech Help,
-								General Language, Jobs and Advice, Off-Topic. LDA is unsupervised, we decided that it may be
-								better at finding hidden subjects or other patterns that we wouldn't have tagged manually given
-								a different approach.</p>
-						</div>
-			
-						<div class="col-md-10 offset-md-1 img-style">
-							<img src="../img/projects/network-analysis/topics-lda.png"
-								alt="4 generalized work clouds for the topics generated across all the data using LDA."
-								width="100%">
-						</div>
-			
-						<div class="col-md-12">
-							<hr />
-							<h2 id="overall">Overall findings</h2>
-							<hr class="divider-spaced">
-						</div>
-			
-						<div class="col-md-12" style="padding-bottom: 50px;">
-							<p style="text-align: center; font-weight: bold;">
-								Overall, it is difficult to generalize subreddits, even within the same domain.
-							</p>
-							<ol>
-								<li>High-level language communities seem to be the most popular</li>
-								<li>A few users that are very active</li>
-								<li>Determined that new languages are more commonly discussed</li>
-								<li>Topics were specific to each subreddit with some overlap</li>
-								<li>Even with overlap, the proportion of posts in similar topics varied considerably.</li>
-							</ol>
-						</div>
-					</div>
+		<!-- ================= PAGE HEADER ================= -->
+		<header class="page-header">
+			<h1>Network & Collaborative Behavior Analysis in Developer Communities </h1>
+		</header>
+		<main class="page-body project-body" id="project">
+			<figure class="blog-post-figure">
+				<img class="blog-post-closing-img" src="../img/projects/network-analysis/header.jpg" alt="An image depicting the final network mapping. 14 concentric circles with lines running between them.">
+			</figure>
+			<p class="bio-text">The project has been split into different sections for discussion of the data collection, approach, analysis, interesting results, and more - see the contents on the left to jump to a section.</p>
+			<p class="bio-text">In general, communities form around common interests and bring people together. Online communities can take many shapes and forms in today's interconnected world. More specifically, communities may allow people to interact in social groups, and contribute to shared experiences.</p>
+			<p class="bio-text">Developer communities are no different; groups of likeminded individuals come together to learn, ask, debug, and build programs and code for a variety of purposes, using a variety of languages. These communities exist on sites such as Reddit, StackOverflow, and Google Groups (to name a few). Developer and programming communities can have a more macro approach (focusing on what good programming looks like, accessibility, and security across programming concepts in general), or a micro approach (usually focused on a specific language). In these micro communities are interesting nuances:</p>
+			<ul class="project-list">
+				<li>Are users often part of multiple communities? What do they talk about in each community?</li>
+				<li>Are users predominantly asking for technical help?</li>
+				<li>Are users talking abstractly about the programming languages?</li>
+				<li>Who are the &ldquo;influencers&rdquo; in these types of social networks?</li>
+			</ul>
+			<p class="bio-text">For this project, we explored the interactions between different programming communities on one particular platform: Reddit. We wanted to learn more about the micro communities, and what they can tell us about developer and programming online communities. We also wanted to determine influencers and topics of interests in selected subreddits and find similarities between selected subreddits. To that end, our research questions were:</p>
+			<ol class="project-list">
+				<li>Which subreddits have common users, who do they interact with, and who are important users in the network?</li>
+				<li>What kind of posts (questions, news, etc.) do users post on each subreddit?</li>
+			</ol>
+			<hr class="section-divider">
+			<h2 class="profile-subhead project-h2" id="scope">Scope, Data, and Preprocessing</h2>
+			<p class="bio-text">We collected data from 14 subreddits below using the Push Shift API. We collected 312,851 records during the date range 1/1/2021&ndash;6/30/2021.</p>
+			<div class="project-subreddit-list">
+				<span class="tag-base hl-tag">C_Programming</span>
+				<span class="tag-base hl-tag">COBOL</span>
+				<span class="tag-base hl-tag">Fortran</span>
+				<span class="tag-base hl-tag">Haskell</span>
+				<span class="tag-base hl-tag">HTML</span>
+				<span class="tag-base hl-tag">HTML5</span>
+				<span class="tag-base hl-tag">JavaScript</span>
+				<span class="tag-base hl-tag">LaTeX</span>
+				<span class="tag-base hl-tag">learnjava</span>
+				<span class="tag-base hl-tag">learnpython</span>
+				<span class="tag-base hl-tag">LISP</span>
+				<span class="tag-base hl-tag">MATLAB</span>
+				<span class="tag-base hl-tag">perl</span>
+				<span class="tag-base hl-tag">Rlanguage</span>
+			</div>
+			<p class="bio-text">Next, we preprocessed the data by removing any records that were missing or incomplete, such as removing &ldquo;deleted&rdquo; authors, and splitting the records into datasheets with edges and nodes to be able to do network analyses.</p>
+			<p class="bio-text">We focused on aggregated analysis vs. temporal analysis for the project. The initial batch of languages we selected was based on languages we found in syllabi at George Mason University, but in general these languages were picked randomly for interest. We also made sure to include languages on the spectrum of newness and maturity. We selected the most active subreddit for each language, and excluded &ldquo;dead&rdquo; languages (i.e., Algol, APL).</p>
+			<hr class="section-divider">
+			<h2 class="profile-subhead project-h2" id="analysis">Analysis and Findings</h2>
+			<h3 class="project-h3" id="analysis1">Commonalities among Subreddit Communities</h3>
+			<p class="bio-text">Below is the final network graph that was created for all the networks.</p>
+			<figure class="blog-post-figure">
+				<img class="blog-post-closing-img" src="../img/projects/network-analysis/network-graph.jpg" alt="An image depicting the final network mapping. 14 concentric circles with lines running between them.">
+			</figure>
+			<p class="bio-text">We initially wanted to see what else we could learn about our users mainly through centrality measures and PageRank. We spent some time identifying each community within our map and labeled them as such. Python and JavaScript subreddits account for a large number of interactions between users.</p>
+			<p class="bio-text">If you notice within each community, there are concentric circles moving outwards from the center. Users in the center interact with that subreddit often, and those on the outside do so less. Those right on the edge of the circle often only have 1 post/comment (extremely low engagement).</p>
+			<p class="project-data-heading">Programming Subreddit Descriptive Data</p>
+			<div class="project-data-grid">
+				<div class="project-data-card">
+					<p class="project-data-card-title">C_Programming</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>3/27/2008</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>112,000</span></li>
+						<li><span>Daily Comments</span><span>78</span></li>
+						<li><span>Total Posts</span><span>4,278</span></li>
+						<li><span>Users Cross-posting</span><span>727</span></li>
+					</ul>
 				</div>
-			</section>
-				
-			<div class="row">
-				<div class="col-md-12">
-					<footer>
-						<p style="text-align:center;">All Rights, Materials, Opinions © Ashish Hingle</p>
-					</footer>
+				<div class="project-data-card">
+					<p class="project-data-card-title">COBOL</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>6/5/2009</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>2,294</span></li>
+						<li><span>Daily Comments</span><span>3</span></li>
+						<li><span>Total Posts</span><span>133</span></li>
+						<li><span>Users Cross-posting</span><span>36</span></li>
+					</ul>
+				</div>
+				<div class="project-data-card">
+					<p class="project-data-card-title">Fortran</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>9/29/2009</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>5,989</span></li>
+						<li><span>Daily Comments</span><span>11</span></li>
+						<li><span>Total Posts</span><span>264</span></li>
+						<li><span>Users Cross-posting</span><span>99</span></li>
+					</ul>
+				</div>
+				<div class="project-data-card">
+					<p class="project-data-card-title">Haskell</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>1/25/2008</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>67,417</span></li>
+						<li><span>Daily Comments</span><span>65</span></li>
+						<li><span>Total Posts</span><span>2,068</span></li>
+						<li><span>Users Cross-posting</span><span>320</span></li>
+					</ul>
+				</div>
+				<div class="project-data-card">
+					<p class="project-data-card-title">HTML</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>9/5/2009</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>34,545</span></li>
+						<li><span>Daily Comments</span><span>4</span></li>
+						<li><span>Total Posts</span><span>1,284</span></li>
+						<li><span>Users Cross-posting</span><span>271</span></li>
+					</ul>
+				</div>
+				<div class="project-data-card">
+					<p class="project-data-card-title">HTML5</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>9/22/2009</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>39,348</span></li>
+						<li><span>Daily Comments</span><span>1</span></li>
+						<li><span>Total Posts</span><span>524</span></li>
+						<li><span>Users Cross-posting</span><span>203</span></li>
+					</ul>
+				</div>
+				<div class="project-data-card">
+					<p class="project-data-card-title">JavaScript</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>1/25/2008</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>1,720,113</span></li>
+						<li><span>Daily Comments</span><span>57</span></li>
+						<li><span>Total Posts</span><span>7,008</span></li>
+						<li><span>Users Cross-posting</span><span>618</span></li>
+					</ul>
+				</div>
+				<div class="project-data-card">
+					<p class="project-data-card-title">LaTeX</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>3/4/2008</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>35,613</span></li>
+						<li><span>Daily Comments</span><span>5</span></li>
+						<li><span>Total Posts</span><span>1,706</span></li>
+						<li><span>Users Cross-posting</span><span>388</span></li>
+					</ul>
+				</div>
+				<div class="project-data-card">
+					<p class="project-data-card-title">learnjava</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>1/27/2011</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>116,403</span></li>
+						<li><span>Daily Comments</span><span>53</span></li>
+						<li><span>Total Posts</span><span>3,341</span></li>
+						<li><span>Users Cross-posting</span><span>528</span></li>
+					</ul>
+				</div>
+				<div class="project-data-card">
+					<p class="project-data-card-title">learnpython</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>10/2/2009</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>571,031</span></li>
+						<li><span>Daily Comments</span><span>525</span></li>
+						<li><span>Total Posts</span><span>24,213</span></li>
+						<li><span>Users Cross-posting</span><span>1,360</span></li>
+					</ul>
+				</div>
+				<div class="project-data-card">
+					<p class="project-data-card-title">LISP</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>1/25/2008</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>33,291</span></li>
+						<li><span>Daily Comments</span><span>43</span></li>
+						<li><span>Total Posts</span><span>824</span></li>
+						<li><span>Users Cross-posting</span><span>182</span></li>
+					</ul>
+				</div>
+				<div class="project-data-card">
+					<p class="project-data-card-title">MATLAB</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>8/15/2009</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>43,046</span></li>
+						<li><span>Daily Comments</span><span>18</span></li>
+						<li><span>Total Posts</span><span>2,095</span></li>
+						<li><span>Users Cross-posting</span><span>301</span></li>
+					</ul>
+				</div>
+				<div class="project-data-card">
+					<p class="project-data-card-title">perl</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>1/25/2008</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>15,149</span></li>
+						<li><span>Daily Comments</span><span>7</span></li>
+						<li><span>Total Posts</span><span>501</span></li>
+						<li><span>Users Cross-posting</span><span>76</span></li>
+					</ul>
+				</div>
+				<div class="project-data-card">
+					<p class="project-data-card-title">Rlanguage</p>
+					<ul class="project-data-card-stats">
+						<li><span>Created</span><span>2/11/2011</span></li>
+						<li><span>Subscribers (Jul 2021)</span><span>26,494</span></li>
+						<li><span>Daily Comments</span><span>8</span></li>
+						<li><span>Total Posts</span><span>1,389</span></li>
+						<li><span>Users Cross-posting</span><span>251</span></li>
+					</ul>
 				</div>
 			</div>
-		</div>
-		<!-- JavaScript Bootstrap Bundle with Popper --> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-		<!-- Lightbox Scripts by Lokesh Dhakar: https://lokeshdhakar.com/ -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-		<script src="css/lightbox/lightbox.min.js"></script>
-		<!-- Script for Masonry https://masonry.desandro.com/ -->
-		<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+			<p class="bio-text">We realized the importance that the size of each subreddit played in the conversation. The number of posts and subscribers differ between the subreddits. The cards above show the number of subscribers, comments per day, total posts within the date range of our dataset, and the number of users who cross-posted to another subreddit. JavaScript was by far the largest, and COBOL the smallest, in terms of subscribers. Additionally, we can see that users posted more in Python every day on average than all the other subreddits.</p>
+			<p class="bio-text">From the network analysis we conducted, Python also had the largest number of posts, and cross posts. After having established that there were users that were cross posting across subreddits, our next step was to figure out what the top cross-posted subreddits were for each user within a subreddit.</p>
+			<p class="bio-text">One of our hypotheses was about cross-posting between subreddits based on the nature of the language. For example, HTML and JavaScript are often used together for front-end web design, so it would make sense that there would be shared users here.</p>
+			<p class="bio-text">However, what we discovered was that Python seems to be the strongest link between all the subreddits, having a high PageRank score on our graph, and also the largest amount of users bridging junctions between their specific subreddit and the Python subreddit.</p>
+			<p class="project-data-heading">Top 3 Connected Subreddits to Each Programming Language Subreddit</p>
+			<ul class="cv-list">
+				<li>
+					<span class="cv-list-title">C_Programming</span>
+					<span class="cv-list-meta">learnpython &middot; javascript &middot; learnjava</span>
+				</li>
+				<li>
+					<span class="cv-list-title">COBOL</span>
+					<span class="cv-list-meta">learnpython &middot; C_Programming &middot; javascript</span>
+				</li>
+				<li>
+					<span class="cv-list-title">Fortran</span>
+					<span class="cv-list-meta">C_Programming &middot; LaTeX &middot; learnpython</span>
+				</li>
+				<li>
+					<span class="cv-list-title">Haskell</span>
+					<span class="cv-list-meta">C_Programming &middot; lisp &middot; learnpython</span>
+				</li>
+				<li>
+					<span class="cv-list-title">HTML</span>
+					<span class="cv-list-meta">learnpython &middot; javascript &middot; html_5</span>
+				</li>
+				<li>
+					<span class="cv-list-title">HTML5</span>
+					<span class="cv-list-meta">javascript &middot; HTML &middot; learnpython</span>
+				</li>
+				<li>
+					<span class="cv-list-title">JavaScript</span>
+					<span class="cv-list-meta">learnpython &middot; C_Programming &middot; html_5</span>
+				</li>
+				<li>
+					<span class="cv-list-title">LaTeX</span>
+					<span class="cv-list-meta">learnpython &middot; matlab &middot; C_Programming</span>
+				</li>
+				<li>
+					<span class="cv-list-title">learnjava</span>
+					<span class="cv-list-meta">learnpython &middot; C_Programming &middot; javascript</span>
+				</li>
+				<li>
+					<span class="cv-list-title">learnpython</span>
+					<span class="cv-list-meta">learnjava &middot; C_Programming &middot; javascript</span>
+				</li>
+				<li>
+					<span class="cv-list-title">LISP</span>
+					<span class="cv-list-meta">haskell &middot; C_Programming &middot; learnpython</span>
+				</li>
+				<li>
+					<span class="cv-list-title">MATLAB</span>
+					<span class="cv-list-meta">learnpython &middot; LaTeX &middot; C_Programming</span>
+				</li>
+				<li>
+					<span class="cv-list-title">perl</span>
+					<span class="cv-list-meta">C_Programming &middot; learnpython &middot; javascript</span>
+				</li>
+				<li>
+					<span class="cv-list-title">Rlanguage</span>
+					<span class="cv-list-meta">learnpython &middot; LaTeX &middot; matlab</span>
+				</li>
+			</ul>
+			<p class="bio-text">We found some interesting data to back up the claim of Python's predominance. The list above shows the top 3 other subreddits that users from a specific subreddit posted to. So, for C_Programming, users cross-posted most to Python, JavaScript, and finally Java.</p>
+			<p class="bio-text">Users in 8 of our 14 subreddits cross-posted most to Python. In fact, Python was ranked within the top 3 of every subreddit we analyzed. Our hypothesis based on reviewing this data is that it speaks to how ubiquitous Python has become in programming today. It is taught in schools, bootcamps, and self-learning courses; has a relatively simple learning curve compared to other languages; is used widely in industry; and interfaces well with other languages.</p>
+			<p class="bio-text">On closer analysis, we found that much of the discussion in more mature language subreddits such as COBOL, Fortran, and LISP involved troubleshooting how to get Python functionalities to interface with their legacy code/hardware, in addition to language migration queries.</p>
+			<h3 class="project-h3" id="analysis2">Influencer Profiles</h3>
+			<p class="bio-text">We calculated several centrality measures for the users in the network, including betweenness, closeness, and PageRank. Of our top influencers, we found several that had interesting profiles. Overall, they interact with users often, helping with ways to get the users' code working correctly, and being able to provide additional resources that would otherwise not have been available to the users. Some of these top influencers also link to other content on other sites, so they are marginally aware of cross-posting across sites here too.</p>
+			<p class="bio-text">We found one user with an extremely high score for betweenness and PageRank, a high measure for closeness, and the largest degree of all our users. This user, as it turned out, was actually a bot known as <em>AutoModerator</em>, often used by subreddits as a management tool. The intention of spreading shared community guidelines and rules across multiple communities seems to work - if we needed to spread a message across all 14 subreddits, this user would be our pick.</p>
+			<h3 class="project-h3" id="analysis3">What are users posting about? Our Topic Modeling Methodology</h3>
+			<div class="project-image-pair">
+				<figure class="blog-post-figure blog-post-figure-medium">
+					<img class="blog-post-closing-img" src="../img/projects/network-analysis/word-graph-1.jpg" alt="A word cloud representing the most common words across subreddits.">
+				</figure>
+				<figure class="blog-post-figure blog-post-figure-medium">
+					<img class="blog-post-closing-img" src="../img/projects/network-analysis/word-graph-2.jpg" alt="A word cloud representing the most common words across subreddits with further processing.">
+				</figure>
+			</div>
+			<p class="bio-text">For our topic modeling attempt, we used Latent Dirichlet Allocation (LDA) to create a set amount of bins, and attempt to sort through the text and create general grouped topics. We expected ~4 topics based on trial and error with empirical observation of several subreddits: Tech Help, General Language, Jobs and Advice, Off-Topic. LDA is unsupervised; we decided that it may be better at finding hidden subjects or other patterns that we wouldn't have tagged manually given a different approach.</p>
+			<figure class="blog-post-figure">
+				<img class="blog-post-closing-img" src="../img/projects/network-analysis/topics-lda.png" alt="4 generalized word clouds for the topics generated across all the data using LDA.">
+			</figure>
+			<hr class="section-divider">
+			<h2 class="profile-subhead project-h2" id="overall">Overall Findings</h2>
+			<p class="project-overall-statement">Overall, it is difficult to generalize subreddits, even within the same domain.</p>
+			<ol class="project-list">
+				<li>High-level language communities seem to be the most popular.</li>
+				<li>A few users are very active.</li>
+				<li>New languages are more commonly discussed.</li>
+				<li>Topics were specific to each subreddit with some overlap.</li>
+				<li>Even with overlap, the proportion of posts in similar topics varied considerably.</li>
+			</ol>
+		</main>
+		<footer class="site-footer">
+			<p>All Rights, Materials, Opinions: Ashish Hingle &copy; <span id="copyrightYear"></span></p>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+		</script>
+		<script>
+			document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+		</script>
+		<script>
+			(function () {
+			  var nav = document.getElementById('siteNav');
+			  var threshold = 60;
+			
+			  function updateNav() {
+			    if (window.scrollY > threshold) {
+			      nav.classList.add('nav-visible');
+			    } else {
+			      nav.classList.remove('nav-visible');
+			    }
+			  }
+			
+			  window.addEventListener('scroll', updateNav, { passive: true });
+			  updateNav();
+			})();
+		</script>
 	</body>
-	<!-- Script for highlighting the section on Navbar -->
-	<script>
-		window.addEventListener('DOMContentLoaded', event => {
-		
-		// Activate Bootstrap scrollspy on the main nav element
-		const sideNav = document.body.querySelector('#sideNav');
-		if (sideNav) {
-			new bootstrap.ScrollSpy(document.body, {
-				target: '#sideNav',
-				smoothScroll: true,
-				rootMargin: '0px 0px -40%',
-			});
-		};
-		
-		// Collapse responsive navbar when toggler is visible
-		const navbarToggler = document.body.querySelector('.navbar-toggler');
-		const responsiveNavItems = [].slice.call(
-			document.querySelectorAll('#navbarResponsive .nav-link')
-		);
-		responsiveNavItems.map(function (responsiveNavItem) {
-			responsiveNavItem.addEventListener('click', () => {
-				if (window.getComputedStyle(navbarToggler).display !== 'none') {
-					navbarToggler.click();
-				}
-			});
-		});
-		});
-	</script>
 </html>

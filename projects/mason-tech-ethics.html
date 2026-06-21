@@ -1,319 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Required meta tags --> 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Hi! My name is Ashish! I am a PhD student in IT in the College of Engineering and Computing at George Mason University.">
-		<meta name="author" content="Ashish Hingle">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Mason Technology Ethics</title>
-		<!-- Favicon's for multiple screen sizes --> 
-		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-		<link rel="manifest" href="img/favicon/site.webmanifest">
-		<!-- Font Awesome icons (free version)-->
-		<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-		<!-- Google fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-		<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-		<!-- Core theme CSS (includes Bootstrap)-->
-		<link href="../css/uhsheesh-styles.css" rel="stylesheet" />
-		<!-- Bootstrap CSS --> 
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-		<!-- Fonts -->
+		<!-- Favicon's for multiple screen sizes -->
+		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="../img/favicon/site.webmanifest">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
-		<!-- Canonical Selector --> 
-		<link rel="canonical" href="https://www.uh-sheesh.com/" />
-		<!-- Gallery Lightbox Stylesheet by Lokesh Dhakar: https://lokeshdhakar.com/-->
-		<link href="css/lightbox/lightbox.min.css" rel="stylesheet">
-		<style>
-			#design, #implement, #assess, #pubs {scroll-margin: 5rem;}
-		</style>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/styles.css">
+		<!-- Meta description -->
+		<meta name="description" content="The Mason Tech Ethics project at George Mason University, exploring how students can be prepared to think ethically about algorithms and AI.">
+		<!-- Open Graph -->
+		<meta property="og:title" content="Mason Technology Ethics — Ashish Hingle">
+		<meta property="og:description" content="The Mason Tech Ethics project at George Mason University, exploring how students can be prepared to think ethically about algorithms and AI.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.uh-sheesh.com/projects/mason-tech-ethics.html">
+		<meta property="og:image" content="https://www.uh-sheesh.com/img/projects/tech-ethics-landing.jpg">
 	</head>
-	<body id="page-top">
-		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="subnav">
-			<div class="container-fluid">
-				<a class="navbar-brand p-3" href="../index.html">Ashish Hingle</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav justify-content-end">
-						<a class="nav-link p-3 btn btn-light" href="../index.html">Return to Main Page</a>
-						<a class="nav-link p-3 btn btn-light" href="../index.html#research">Research</a>
-						<a class="nav-link p-3 btn btn-light active" href="../index.html#projects">Projects</a>
-						<a class="nav-link p-3 btn btn-light" href="../index.html#service">Service</a>
-						<a class="nav-link p-3 btn btn-light" href="../index.html#press">Press</a>
-						<a class="nav-link p-3 btn btn-light" href="../index.html#cafe">Creative Cafe</a>
-					</div>
-				</div>
-			</div>
+	<body>
+		<a class="skip-nav" href="#project">Skip to main content</a>
+		<a id="page-top"></a>
+		<!-- ================= NAV ================= -->
+		<nav class="site-nav" id="siteNav">
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a class="nav-link nav-home" href="../index.html" aria-label="Return to home">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 11.5L12 4L21 11.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10V20H19V10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#research">Research</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#teaching">Teaching</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="../index.html#projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#press">Press</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#creative-cafe">Creative Cafe</a>
+				</li>
+			</ul>
 		</nav>
-		<!-- Page Content-->
-		<div class="container-fluid p-2 mt-5">
-			<section class="resume-section" id="research">
-				<div class="resume-section-content p-5">
-					<div class="p-5 mb-4 rounded-3 jumbotron" style="background-color: #f3f3f3;">
-						<div style="text-align:center; padding-bottom: 5em;">
-							<img src="../img/projects/thinking.png" class="img-fluid" alt="An emoji face thinking with it's mouth open." style="text-align:center; width: 20em;">
-						</div>
-						<h1 class="display-5 fw-bold">Mason Technology Ethics</h1>
-						<p class="lead">A Research Project at George Mason University.</p>
-						<hr>
-						<p>The <i>Mason Tech Ethics</i> project addresses one way students can be prepared to face the challenge of working with emerging technologies and techniques - algorithms, AI, machine learning, and large language models, to name a few. We use role-plays (RPs) in combination with case studies (CS) to situate students in scenarios they are likely to face outside the classroom.</p>
-						<p>Should all data be collected even if it currently doesn't have a use? Should an algorithm that uses social media indicators be used to predict credit risk? How can solidarity and respect be embedded into the implementation of machines in a previously human-intensive industry? These are some examples of the ethical dilemmas students grapple with through the cases and are tasked with deliberating from the perspective of a role on how to move forward.</p>
-						<div class="d-grid gap-2 col-6 mx-auto">
-							<p style="font-size: smaller;"><i>Navigate to section by clicking a button below:</i></p>
-							<a class="btn btn-success" href="#design" type="button">Design Role-plays Case Studies (RPCS)</a>
-							<a class="btn btn-success" href="#implement" type="button">Run RPCS in the Classroom</a>
-							<a class="btn btn-success" href="#assess" type="button">Assessing RPCS</a>
-							<a class="btn btn-success" href="#pubs" type="button">Publications & Proceedings from this Project</a>
-						</div>
-						<p>We currently have 8 developed cases:</p>
-						<div class="p-5 mb-4 text-white bg-light rounded-3 table-responsive-md">
-							<table class="table table-light table-striped">
-								<thead class="thead-light">
-									<tr>
-										<th scope="col" class="col-7">Case</th>
-										<th scope="col" class="col-3">Themes</th>
-										<th scope="col" class="col-2">Link</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><b><i>Responding to the Boeing Max 737 Crisis</i></b></br>As a member of the Aviation Transportation Investigative Committee (ATIC), participants are tasked with discussing how systematic (technical and social) issues in aviation can be mitigated.</td>
-										<td>Building Trust; Responsibility; Engineering; Disaster;</td>
-										<td><a class="gr" href="https://onlineethics.org/cases/george-mason-tech-ethics/learning-and-moving-forward-boeing-max-737-crisis" target="_blank">Case available online</a></td>
-									</tr>
-									<tr>
-										<td><b><i>Facial Recognition Technology (FRT) on a College Campus</i></b></br>In response to the global pandemic, Andrew Hamilton University administrators have established a task force to discuss if facial recognition technology will ensure students' safe return on campus.</td>
-										<td>Innovative Practice; Surveillance; Emergency Response; Privacy;</td>
-										<td><a class="gr" href="https://onlineethics.org/cases/george-mason-tech-ethics/utilizing-facial-recognition-university-campus" target="_blank">Case available online</a></td>
-									</tr>
-									<tr>
-										<td><b><i>Algorithmic Lending Risk Decisions</i></b></br>A loan manager wants to explore algorithmic decision-making for credit and loan decision-making and whether data on demographic and socio-economic profiles should be included.</td>
-										<td>Risk; Predictive Models;</td>
-										<td><a class="gr" href="https://onlineethics.org/cases/george-mason-tech-ethics/predicting-lending-risk-machine-learning-models" target="_blank">Case available online</a></td>
-									</tr>
-									<tr>
-										<td><b><i>Building Trust after the Volkswagen (VW) Emissions Scandal</i></b></br>A rental company's fleet manager is interested in VW vehicles. They want to know if the company can be trusted and what responsibility organizations have to correct the problems they cause.</td>
-										<td>Trust;</td>
-										<td>Available Soon</td>
-									</tr>
-									<tr>
-										<td><b><i>E-scooters on Campus</i></b></br>A student reporter is interested in cross-community dialogue on the responsibility of e-scooters from the institution, companies providing the services, and users on campus.</td>
-										<td>Sustainability; Responsibility;</td>
-										<td>Available Soon</td>
-									</tr>
-									<tr>
-										<td><b><i>Conversations and Community in Agriculture - Ethical Implementation of Machines</i></b></br>A local reporter is interested in hearing from community members of an agriculture-dependent region on the impact and implications of AI technology on people, regulations, and livelihoods.</td>
-										<td>Innovation; Solidarity;</td>
-										<td>Available Soon</td>
-									</tr>
-									<tr>
-										<td><b><i>Community Food Security</i></b></br>A small community is considering a technology-driven food co-op - that uses data to predict the needs of people, reducing cost and eliminating waste - as their only local grocery store is closing.</td>
-										<td>Food Security; Community Needs; Software Development;</td>
-										<td>Available Soon</td>
-									</tr>
-									<tr>
-										<td><b><i>Bhopal Gas Disaster</i></b></br>40 years after the disaster, a group of experts are brought together to discuss the long-standing impact on the local communities surrounding the area.</td>
-										<td>Engineering; Disaster;</td>
-										<td>Available Soon</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<p>Interested in running similar activities in your courses? Below are some highlighted resources from this project. For all the publications and proceedings, see the <a  class="gr" href="#pubs">Publications and Proceedings</a> at the bottom of the page.</p>
-						<hr class="divider" />
-						<h2 id="design">Design Role-plays Case Studies (RPCS)</h2>
-						<p>We created <i>A Framework to Develop and Implement Role-Play Case Studies to Teach Responsible Technology Use</i>. <a class="gr" href="#pubs">Read more in the journal paper, "A Framework to Develop and Implement Role-Play Case Studies to Teach Responsible Technology Use" [17]</a>.</p>
-						<div class="row" style="padding-bottom: 30px; padding-top: 30px;">
-							<div class="col-lg-10 offset-lg-1">
-								<img class="img-fluid" src="../img/projects/tech-ethics/designing-rps-css.jpg" alt="Card image cap" />
-							</div>
-						</div>
-						<hr class="divider-spaced" />
-						<h2 id="implement">Run RPCS in the Classroom</h2>
-						<p>Here are some examples of activities, in addition to the role-plays themselves, that can support and scaffold the role-plays in the classroom. <a class="gr" href="#pubs">Read more in the conference paper, "Role-Play Case Studies to Teach Computing Ethics: Theoretical Foundations and Practical Guidelines" [14]</a>.</p>
-						<div class="row" style="padding-bottom: 30px; padding-top: 30px;">
-							<div class="col-lg-8 offset-lg-2">
-								<img class="img-fluid" src="../img/projects/tech-ethics/running-rps-css.jpg" alt="Card image cap" />
-							</div>
-						</div>
-						<hr class="divider-spaced" />
-						<h2 id="assess">Assessing RPCS</h2>
-						<p>One way to assess role-plays is by having students do concept maps that allow them to envision how different concepts are connected to each other. Below is an example of a concept map for one case study. <a class="gr" href="#pubs">Read more in the conference paper, "Assessing Engineering Student's Representation and Identification of Ethical Dilemmas through Concept Maps and Role-Plays" [9]</a>.</p>
-						<div class="row" style="padding-bottom: 30px; padding-top: 30px;">
-							<div class="col-lg-8 offset-lg-2">
-								<img class="img-fluid" src="../img/projects/tech-ethics/assessing-rps-css.jpg" alt="Card image cap" />
-							</div>
-						</div>
-						<hr class="divider-spaced" />
-						<h2 id="pubs">Publications & Proceedings from this Project</h2>
-						<div class="p-5 mb-4 text-white bg-light rounded-3 table-responsive-md">
-							<table class="table table-light table-striped">
-								<thead class="thead-light">
-									<tr>
-										<th scope="col" class="col-1">#</th>
-										<th scope="col" class="col-1">Date</th>
-										<th scope="col" class="col-9">Citation</th>
-										<th scope="col" class="col-1">Link</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>[17]</td>
-										<td>2024</td>
-										<td class="citation">Hingle, A. & Johri, A. (2024). A Framework to Develop and Implement Role-Play Case Studies to Teach Responsible Technology Use. IEEE Transactions on Technology and Society. https://doi.org/10.1109/TTS.2024.3408085</td>
-										<td><a href="https://doi.org/10.1109/TTS.2024.3408085" class="gr" target="_blank">Link</a></td>
-									</tr>
-									<tr>
-										<td>[16]</td>
-										<td>2024</td>
-										<td class="citation">Hingle, A. & Johri, A. (2024). Using Fictional Role-Plays for Engineering and Computing Ethics Instruction. Poster presented at the GMU College of Engineering and Computing Innovation Week 2024 Graduate Student Poster Competition, Fairfax, Virginia, USA. <span class="entry-em-italic-gold">*(Second-Place Award, Graduate Category)</span></td>
-										<td><a href="" target="_blank"></a></td>
-									</tr>
-									<tr>
-										<td>[15]</td>
-										<td>2024</td>
-										<td class="citation">Hingle, A. & Johri, A. (2024). Technology Students' Recognition of Algorithmic Data Bias through Role-Play Case Studies. Proceedings of the 2024 Collaborative Network for Engineering & Computing Diversity (CoNECD), Arlington, Virginia, USA.</td>
-										<td><a href="" target="_blank"></a></td>
-									</tr>
-									<tr>
-										<td>[14]</td>
-										<td>2024</td>
-										<td class="citation">Hingle, A. & Johri, A. (2024). Role-Play Case Studies to Teach Computing Ethics: Theoretical Foundations and Practical Guidelines. Proceedings of the 57th Hawaii International Conference on System Sciences, Waikiki, HI, USA. <span class="entry-em-italic-gold">*(Best Paper Nomination, Computing Education Minitrack)</span></td>
-										<td><a href="https://scholarspace.manoa.hawaii.edu/items/8ea72735-3b73-4f1a-82a1-5e30e8e41a43" class="gr" target="_blank">Link</a></td>
-									</tr>
-									<tr>
-										<td>[13]</td>
-										<td>2023</td>
-										<td class="citation">Mehta, S., Hingle, A. & Johri, A. (2023). Teaching Multidimensional Ethical Decision-Making through a Role-Play Case Study. Proceedings of 2023 IEEE ASEE Frontiers in Education Conference, College Station, TX, USA.</td>
-										<td><a href="https://ieeexplore.ieee.org/abstract/document/10343022" class="gr" target="_blank">Link</a></td>
-									</tr>
-									<tr>
-										<td>[12]</td>
-										<td>2023</td>
-										<td class="citation">Mehta, S., Hingle, A., & Johri, A. (2023). Teaching Sustainability Through A Role-Play Case Study Of E-Scooter Use On College Campuses. Proceedings of 2023 European Society for Engineering Education (SEFI) Conference, Dublin, Ireland.</td>
-										<td><a href="https://arrow.tudublin.ie/sefi2023_respap/45/" class="gr" target="_blank">Link</a></td>
-									</tr>
-									<tr>
-										<td>[11]</td>
-										<td>2023</td>
-										<td class="citation">Hingle, A. & Johri, A., (2023). Recognizing Principles of AI Ethics through a Role-Play Case Study on Agriculture. Proceedings of 2023 American Society for Engineering Education (ASEE) Conference, Baltimore, MD, USA.</td>
-										<td><a href="https://peer.asee.org/recognizing-principles-of-ai-ethics-through-a-role-play-case-study-on-agriculture" class="gr" target="_blank">Link</a></td>
-									</tr>
-									<tr>
-										<td>[10]</td>
-										<td>2023</td>
-										<td class="citation">Hingle, A. & Johri, A., (2023). Using Fictional Role-Plays for Engineering and Computing Ethics Instruction. Proceedings of 2023 IEEE International Symposium on Ethics in Engineering, Science, and Technology (ETHICS), West Lafayette, IN, USA. <span class="entry-em-italic-gold">*(Honorable Mention, Best Poster)</span></td>
-										<td><a href="https://ieeexplore.ieee.org/abstract/document/10155068" class="gr" target="_blank">Link</a></td>
-									</tr>
-									<tr>
-										<td>[9]</td>
-										<td>2022</td>
-										<td class="citation">Johri, A., & Hingle, A., (2022). Learning to Link Micro, Meso, and Macro Ethical Concerns Through Role-Play Discussions. Proceedings of 2022 IEEE Frontiers in Education Conference (FIE), Uppsala, Sweden.</td>
-										<td><a href="https://ieeexplore.ieee.org/abstract/document/9962560" class="gr" target="_blank">Link</a></td>
-									</tr>
-									<tr>
-										<td>[8]</td>
-										<td>2022</td>
-										<td class="citation">Hingle, A., & Johri, A. (2022). Assessing Engineering Student's Representation and Identification of Ethical Dilemmas through Concept Maps and Role-Plays. Proceedings of 2022 ASEE Annual Conference and Exposition, Minneapolis, MN.</td>
-										<td><a href="https://peer.asee.org/assessing-engineering-student-s-representation-and-identification-of-ethical-dilemmas-through-concept-maps-and-role-plays" class="gr" target="_blank">Link</a></td>
-									</tr>
-									<tr>
-										<td>[7]</td>
-										<td>2022</td>
-										<td class="citation">Hingle, A., Johri, A., & Brozina, C. (2022). Instructing First-Year Engineering Students on the Ethics of Algorithms through a Role-Play. Proceedings of 2022 ASEE Annual Conference and Exposition, Minneapolis, MN.</td>
-										<td><a href="https://peer.asee.org/instructing-first-year-engineering-students-on-the-ethics-of-algorithms-through-a-role-play" class="gr" target="_blank">Link</a></td>
-									</tr>
-									<tr>
-										<td>[6]</td>
-										<td>2022</td>
-										<td class="citation">Hingle, A., Johri, A., Rangwala, H., & Monea, A. (2022). Improving Ethical Thinking Among Future Technologists Through Role-Play Case Studies. 2022 IUSE Summit (Organized by AAAS and NSF), Washington, DC.</td>
-										<td><a href="" target="_blank"></a></td>
-									</tr>
-									<tr>
-										<td>[5]</td>
-										<td>2022</td>
-										<td class="citation">Hingle, A., Rangwala, H., Johri, A., & Monea, A. (2021). Using Role-Plays to Improve Ethical Understanding of Algorithms Among Computing Students. Proceedings of IEEE/ERM Frontiers in Education, 2021.</td>
-										<td><a href="https://ieeexplore.ieee.org/abstract/document/9637418" class="gr" target="_blank">Link</a></td>
-									</tr>
-									<tr>
-										<td>[4]</td>
-										<td>2021</td>
-										<td class="citation">Martin, DA., Johri, A., Hingle, A. & Lennerfors, T. (2021). Role-playing hypothetical stakeholder scenarios. Proceedings of 49th SEFI Annual Conference 2021, European Society for Engineering Education (SEFI).</td>
-										<td><a href="" target="_blank"></a></td>
-									</tr>
-									<tr>
-										<td>[3]</td>
-										<td>2021</td>
-										<td class="citation">Hingle, A., & Johri, A. (2021). Using Role-Play Case Studies to Teach Engineering for Social Justice. Proceedings of 4S Annual meeting: Good Relations Practices and Methods in Unequal and Uncertain Worlds, 2021.</td>
-										<td><a href="" target="_blank"></a></td>
-									</tr>
-									<tr>
-										<td>[2]</td>
-										<td>2021</td>
-										<td class="citation">Hingle, A., & Johri, A. (2021). Using Role Play Scenarios to Teach Ethical Thinking. Proceedings of 2021 Innovations in Teaching & Learning Conference, George Mason University.</td>
-										<td><a href="" target="_blank"></a></td>
-									</tr>
-									<tr>
-										<td>[1]</td>
-										<td>2021</td>
-										<td class="citation">Hingle, A., Johri, A., Rangwala, H., & Monea, A. (2021). Using the Boeing Max Air Disaster as A Role-play Scenario for Teaching Ethical Thinking. Proceedings of 2021 ASEE Annual Conference and Exposition.</td>
-										<td><a href="https://peer.asee.org/using-the-boeing-max-air-disaster-as-a-role-play-scenario-for-teaching-ethical-thinking" class="gr" target="_blank">Link</a></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<hr class="divider" />
-					</div>
+		<!-- ================= PAGE HEADER ================= -->
+		<header class="page-header">
+			<h1>Mason Technology Ethics</h1>
+			<p class="blog-post-dek">A Research Project at George Mason University.</p>
+		</header>
+		<main class="page-body project-body" id="project">
+			<article class="blog-post">
+				<figure class="blog-post-figure blog-post-figure-medium" style="margin: 0 auto 1.5rem auto;">
+					<img class="blog-post-closing-img" src="../img/projects/thinking.png" alt="An emoji face thinking with its mouth open.">
+				</figure>
+				<hr class="section-divider">
+				<div class="blog-post-body" style="max-width: 100%;">
+					<p class="bio-text">The <em>Mason Tech Ethics</em> project addresses one way students can be prepared to face the challenge of working with emerging technologies and techniques - algorithms, AI, machine learning, and large language models, to name a few. We use role-plays (RPs) in combination with case studies (CS) to situate students in scenarios they are likely to face outside the classroom.</p>
+					<p class="bio-text">Should all data be collected even if it currently doesn't have a use? Should an algorithm that uses social media indicators be used to predict credit risk? How can solidarity and respect be embedded into the implementation of machines in a previously human-intensive industry? These are some examples of the ethical dilemmas students grapple with through the cases, and are tasked with deliberating from the perspective of a role on how to move forward.</p>
 				</div>
-			</section>
-			<div class="row">
-				<div class="col-md-12">
-					<footer>
-						<p style="text-align:center;">All Rights, Materials, Opinions © Ashish Hingle</p>
-					</footer>
+				<p class="gallery-subtitle" style="text-align: center;"><em>Navigate to a section by clicking a button below:</em></p>
+				<div class="hl-actions" style="max-width: 480px; margin: 0 auto 2rem auto; flex-wrap: wrap;">
+					<a href="#design" class="hl-btn hl-btn-filled" style="flex: 1 1 100%;">Design Role-Play Case Studies (RPCS)</a>
+					<a href="#implement" class="hl-btn hl-btn-filled" style="flex: 1 1 100%;">Run RPCS in the Classroom</a>
+					<a href="#assess" class="hl-btn hl-btn-filled" style="flex: 1 1 100%;">Assessing RPCS</a>
+					<a href="#pubs" class="hl-btn hl-btn-filled" style="flex: 1 1 100%;">Publications &amp; Proceedings from this Project</a>
 				</div>
-			</div>
-		</div>
-		<!-- JavaScript Bootstrap Bundle with Popper --> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-		<!-- Lightbox Scripts by Lokesh Dhakar: https://lokeshdhakar.com/ -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-		<script src="css/lightbox/lightbox.min.js"></script>
-		<!-- Script for Masonry https://masonry.desandro.com/ -->
-		<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+				<p class="bio-text">We currently have 8 developed cases:</p>
+				<ul class="cv-list">
+					<li>
+						<span class="cv-list-title">Responding to the Boeing Max 737 Crisis</span>
+						<span class="cv-list-meta">As a member of the Aviation Transportation Investigative Committee (ATIC), participants are tasked with discussing how systematic (technical and social) issues in aviation can be mitigated. &middot; Building Trust, Responsibility, Engineering, Disaster &middot; <a href="https://onlineethics.org/cases/george-mason-tech-ethics/learning-and-moving-forward-boeing-max-737-crisis" target="_blank" rel="noopener">Case available online</a></span>
+					</li>
+					<li>
+						<span class="cv-list-title">Facial Recognition Technology (FRT) on a College Campus</span>
+						<span class="cv-list-meta">In response to the global pandemic, Andrew Hamilton University administrators have established a task force to discuss if facial recognition technology will ensure students' safe return on campus. &middot; Innovative Practice, Surveillance, Emergency Response, Privacy &middot; <a href="https://onlineethics.org/cases/george-mason-tech-ethics/utilizing-facial-recognition-university-campus" target="_blank" rel="noopener">Case available online</a></span>
+					</li>
+					<li>
+						<span class="cv-list-title">Algorithmic Lending Risk Decisions</span>
+						<span class="cv-list-meta">A loan manager wants to explore algorithmic decision-making for credit and loan decisions and whether data on demographic and socio-economic profiles should be included. &middot; Risk, Predictive Models &middot; <a href="https://onlineethics.org/cases/george-mason-tech-ethics/predicting-lending-risk-machine-learning-models" target="_blank" rel="noopener">Case available online</a></span>
+					</li>
+					<li>
+						<span class="cv-list-title">Building Trust after the Volkswagen (VW) Emissions Scandal</span>
+						<span class="cv-list-meta">A rental company's fleet manager is interested in VW vehicles. They want to know if the company can be trusted and what responsibility organizations have to correct the problems they cause. &middot; Trust &middot; Available Soon</span>
+					</li>
+					<li>
+						<span class="cv-list-title">E-scooters on Campus</span>
+						<span class="cv-list-meta">A student reporter is interested in cross-community dialogue on the responsibility of e-scooters from the institution, companies providing the services, and users on campus. &middot; Sustainability, Responsibility &middot; Available Soon</span>
+					</li>
+					<li>
+						<span class="cv-list-title">Conversations and Community in Agriculture - Ethical Implementation of Machines</span>
+						<span class="cv-list-meta">A local reporter is interested in hearing from community members of an agriculture-dependent region on the impact and implications of AI technology on people, regulations, and livelihoods. &middot; Innovation, Solidarity &middot; Available Soon</span>
+					</li>
+					<li>
+						<span class="cv-list-title">Community Food Security</span>
+						<span class="cv-list-meta">A small community is considering a technology-driven food co-op - that uses data to predict the needs of people, reducing cost and eliminating waste - as their only local grocery store is closing. &middot; Food Security, Community Needs, Software Development &middot; Available Soon</span>
+					</li>
+					<li>
+						<span class="cv-list-title">Bhopal Gas Disaster</span>
+						<span class="cv-list-meta">40 years after the disaster, a group of experts are brought together to discuss the long-standing impact on the local communities surrounding the area. &middot; Engineering, Disaster &middot; Available Soon</span>
+					</li>
+				</ul>
+				<p class="bio-text">Interested in running similar activities in your courses? Below are some highlighted resources from this project. For all the publications and proceedings, see the <a href="#pubs">Publications and Proceedings</a> at the bottom of the page.</p>
+				<hr class="section-divider">
+				<h2 class="profile-subhead" id="design">Design Role-Play Case Studies (RPCS)</h2>
+				<p class="bio-text">We created <em>A Framework to Develop and Implement Role-Play Case Studies to Teach Responsible Technology Use</em>. <a href="#pubs">Read more in the journal paper, &ldquo;A Framework to Develop and Implement Role-Play Case Studies to Teach Responsible Technology Use&rdquo; [17]</a>.</p>
+				<figure class="blog-post-figure blog-post-figure-medium" style="margin: 1.5rem auto;">
+					<img class="blog-post-closing-img" src="../img/projects/tech-ethics/designing-rps-css.jpg" alt="Diagram of the role-play case study design process.">
+				</figure>
+				<hr class="section-divider">
+				<h2 class="profile-subhead" id="implement">Run RPCS in the Classroom</h2>
+				<p class="bio-text">Here are some examples of activities, in addition to the role-plays themselves, that can support and scaffold the role-plays in the classroom. <a href="#pubs">Read more in the conference paper, &ldquo;Role-Play Case Studies to Teach Computing Ethics: Theoretical Foundations and Practical Guidelines&rdquo; [14]</a>.</p>
+				<figure class="blog-post-figure blog-post-figure-medium" style="margin: 1.5rem auto;">
+					<img class="blog-post-closing-img" src="../img/projects/tech-ethics/running-rps-css.jpg" alt="Diagram of activities used to support role-play case studies in the classroom.">
+				</figure>
+				<hr class="section-divider">
+				<h2 class="profile-subhead" id="assess">Assessing RPCS</h2>
+				<p class="bio-text">One way to assess role-plays is by having students do concept maps that allow them to envision how different concepts are connected to each other. Below is an example of a concept map for one case study. <a href="#pubs">Read more in the conference paper, &ldquo;Assessing Engineering Student's Representation and Identification of Ethical Dilemmas through Concept Maps and Role-Plays&rdquo; [9]</a>.</p>
+				<figure class="blog-post-figure blog-post-figure-medium" style="margin: 1.5rem auto;">
+					<img class="blog-post-closing-img" src="../img/projects/tech-ethics/assessing-rps-css.jpg" alt="Example concept map created by a student for a role-play case study.">
+				</figure>
+				<hr class="section-divider">
+				<h2 class="profile-subhead" id="pubs">Publications &amp; Proceedings from this Project</h2>
+				<ul class="cv-list">
+					<li>
+						<span class="cv-list-num">[17]</span>
+						<span class="cv-list-title"><a href="https://doi.org/10.1109/TTS.2024.3408085" target="_blank" rel="noopener">A Framework to Develop and Implement Role-Play Case Studies to Teach Responsible Technology Use</a></span>
+						<span class="cv-list-meta">Hingle, A. &amp; Johri, A. (2024) &middot; IEEE Transactions on Technology and Society</span>
+					</li>
+					<li>
+						<span class="cv-list-num">[16]</span>
+						<span class="cv-list-title">Using Fictional Role-Plays for Engineering and Computing Ethics Instruction</span>
+						<span class="cv-list-meta">Hingle, A. &amp; Johri, A. (2024) &middot; Poster, GMU College of Engineering and Computing Innovation Week 2024 Graduate Student Poster Competition, Fairfax, VA &middot; <span class="tag-base hl-tag-award">Second-Place Award, Graduate Category</span></span>
+					</li>
+					<li>
+						<span class="cv-list-num">[15]</span>
+						<span class="cv-list-title">Technology Students' Recognition of Algorithmic Data Bias through Role-Play Case Studies</span>
+						<span class="cv-list-meta">Hingle, A. &amp; Johri, A. (2024) &middot; Proceedings of the 2024 Collaborative Network for Engineering &amp; Computing Diversity (CoNECD), Arlington, VA</span>
+					</li>
+					<li>
+						<span class="cv-list-num">[14]</span>
+						<span class="cv-list-title"><a href="https://scholarspace.manoa.hawaii.edu/items/8ea72735-3b73-4f1a-82a1-5e30e8e41a43" target="_blank" rel="noopener">Role-Play Case Studies to Teach Computing Ethics: Theoretical Foundations and Practical Guidelines</a></span>
+						<span class="cv-list-meta">Hingle, A. &amp; Johri, A. (2024) &middot; Proceedings of the 57th Hawaii International Conference on System Sciences, Waikiki, HI &middot; <span class="tag-base hl-tag-award">Best Paper Nomination, Computing Education Minitrack</span></span>
+					</li>
+					<li>
+						<span class="cv-list-num">[13]</span>
+						<span class="cv-list-title"><a href="https://ieeexplore.ieee.org/abstract/document/10343022" target="_blank" rel="noopener">Teaching Multidimensional Ethical Decision-Making through a Role-Play Case Study</a></span>
+						<span class="cv-list-meta">Mehta, S., Hingle, A. &amp; Johri, A. (2023) &middot; Proceedings of 2023 IEEE/ASEE Frontiers in Education Conference, College Station, TX</span>
+					</li>
+					<li>
+						<span class="cv-list-num">[12]</span>
+						<span class="cv-list-title"><a href="https://arrow.tudublin.ie/sefi2023_respap/45/" target="_blank" rel="noopener">Teaching Sustainability Through A Role-Play Case Study Of E-Scooter Use On College Campuses</a></span>
+						<span class="cv-list-meta">Mehta, S., Hingle, A., &amp; Johri, A. (2023) &middot; Proceedings of 2023 European Society for Engineering Education (SEFI) Conference, Dublin, Ireland</span>
+					</li>
+					<li>
+						<span class="cv-list-num">[11]</span>
+						<span class="cv-list-title"><a href="https://peer.asee.org/recognizing-principles-of-ai-ethics-through-a-role-play-case-study-on-agriculture" target="_blank" rel="noopener">Recognizing Principles of AI Ethics through a Role-Play Case Study on Agriculture</a></span>
+						<span class="cv-list-meta">Hingle, A. &amp; Johri, A. (2023) &middot; Proceedings of 2023 American Society for Engineering Education (ASEE) Conference, Baltimore, MD</span>
+					</li>
+					<li>
+						<span class="cv-list-num">[10]</span>
+						<span class="cv-list-title"><a href="https://ieeexplore.ieee.org/abstract/document/10155068" target="_blank" rel="noopener">Using Fictional Role-Plays for Engineering and Computing Ethics Instruction</a></span>
+						<span class="cv-list-meta">Hingle, A. &amp; Johri, A. (2023) &middot; Proceedings of 2023 IEEE International Symposium on Ethics in Engineering, Science, and Technology (ETHICS), West Lafayette, IN &middot; <span class="tag-base hl-tag-award">Honorable Mention, Best Poster</span></span>
+					</li>
+					<li>
+						<span class="cv-list-num">[9]</span>
+						<span class="cv-list-title"><a href="https://ieeexplore.ieee.org/abstract/document/9962560" target="_blank" rel="noopener">Learning to Link Micro, Meso, and Macro Ethical Concerns Through Role-Play Discussions</a></span>
+						<span class="cv-list-meta">Johri, A., &amp; Hingle, A. (2022) &middot; Proceedings of 2022 IEEE Frontiers in Education Conference (FIE), Uppsala, Sweden</span>
+					</li>
+					<li>
+						<span class="cv-list-num">[8]</span>
+						<span class="cv-list-title"><a href="https://peer.asee.org/assessing-engineering-student-s-representation-and-identification-of-ethical-dilemmas-through-concept-maps-and-role-plays" target="_blank" rel="noopener">Assessing Engineering Student's Representation and Identification of Ethical Dilemmas through Concept Maps and Role-Plays</a></span>
+						<span class="cv-list-meta">Hingle, A., &amp; Johri, A. (2022) &middot; Proceedings of 2022 ASEE Annual Conference and Exposition, Minneapolis, MN</span>
+					</li>
+					<li>
+						<span class="cv-list-num">[7]</span>
+						<span class="cv-list-title"><a href="https://peer.asee.org/instructing-first-year-engineering-students-on-the-ethics-of-algorithms-through-a-role-play" target="_blank" rel="noopener">Instructing First-Year Engineering Students on the Ethics of Algorithms through a Role-Play</a></span>
+						<span class="cv-list-meta">Hingle, A., Johri, A., &amp; Brozina, C. (2022) &middot; Proceedings of 2022 ASEE Annual Conference and Exposition, Minneapolis, MN</span>
+					</li>
+					<li>
+						<span class="cv-list-num">[6]</span>
+						<span class="cv-list-title">Improving Ethical Thinking Among Future Technologists Through Role-Play Case Studies</span>
+						<span class="cv-list-meta">Hingle, A., Johri, A., Rangwala, H., &amp; Monea, A. (2022) &middot; 2022 IUSE Summit (Organized by AAAS and NSF), Washington, DC</span>
+					</li>
+					<li>
+						<span class="cv-list-num">[5]</span>
+						<span class="cv-list-title"><a href="https://ieeexplore.ieee.org/abstract/document/9637418" target="_blank" rel="noopener">Using Role-Plays to Improve Ethical Understanding of Algorithms Among Computing Students</a></span>
+						<span class="cv-list-meta">Hingle, A., Rangwala, H., Johri, A., &amp; Monea, A. (2021) &middot; Proceedings of IEEE/ERM Frontiers in Education, 2021</span>
+					</li>
+					<li>
+						<span class="cv-list-num">[4]</span>
+						<span class="cv-list-title">Role-playing hypothetical stakeholder scenarios</span>
+						<span class="cv-list-meta">Martin, D.A., Johri, A., Hingle, A. &amp; Lennerfors, T. (2021) &middot; Proceedings of 49th SEFI Annual Conference 2021, European Society for Engineering Education (SEFI)</span>
+					</li>
+					<li>
+						<span class="cv-list-num">[3]</span>
+						<span class="cv-list-title">Using Role-Play Case Studies to Teach Engineering for Social Justice</span>
+						<span class="cv-list-meta">Hingle, A., &amp; Johri, A. (2021) &middot; Proceedings of 4S Annual Meeting: Good Relations Practices and Methods in Unequal and Uncertain Worlds, 2021</span>
+					</li>
+					<li>
+						<span class="cv-list-num">[2]</span>
+						<span class="cv-list-title">Using Role Play Scenarios to Teach Ethical Thinking</span>
+						<span class="cv-list-meta">Hingle, A., &amp; Johri, A. (2021) &middot; Proceedings of 2021 Innovations in Teaching &amp; Learning Conference, George Mason University</span>
+					</li>
+					<li>
+						<span class="cv-list-num">[1]</span>
+						<span class="cv-list-title"><a href="https://peer.asee.org/using-the-boeing-max-air-disaster-as-a-role-play-scenario-for-teaching-ethical-thinking" target="_blank" rel="noopener">Using the Boeing Max Air Disaster as A Role-play Scenario for Teaching Ethical Thinking</a></span>
+						<span class="cv-list-meta">Hingle, A., Johri, A., Rangwala, H., &amp; Monea, A. (2021) &middot; Proceedings of 2021 ASEE Annual Conference and Exposition</span>
+					</li>
+				</ul>
+			</article>
+		</main>
+		<footer class="site-footer">
+			<p>All Rights, Materials, Opinions: Ashish Hingle &copy; <span id="copyrightYear"></span></p>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+		</script>
+		<script>
+			document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+		</script>
+		<script>
+			(function () {
+			  var nav = document.getElementById('siteNav');
+			  var threshold = 60;
+			
+			  function updateNav() {
+			    if (window.scrollY > threshold) {
+			      nav.classList.add('nav-visible');
+			    } else {
+			      nav.classList.remove('nav-visible');
+			    }
+			  }
+			
+			  window.addEventListener('scroll', updateNav, { passive: true });
+			  updateNav();
+			})();
+		</script>
 	</body>
-	<!-- Script for highlighting the section on Navbar -->
-	<script>
-		window.addEventListener('DOMContentLoaded', event => {
-		
-		// Activate Bootstrap scrollspy on the main nav element
-		const sideNav = document.body.querySelector('#sideNav');
-		if (sideNav) {
-			new bootstrap.ScrollSpy(document.body, {
-				target: '#sideNav',
-				smoothScroll: true,
-				rootMargin: '0px 0px -40%',
-			});
-		};
-		
-		// Collapse responsive navbar when toggler is visible
-		const navbarToggler = document.body.querySelector('.navbar-toggler');
-		const responsiveNavItems = [].slice.call(
-			document.querySelectorAll('#navbarResponsive .nav-link')
-		);
-		responsiveNavItems.map(function (responsiveNavItem) {
-			responsiveNavItem.addEventListener('click', () => {
-				if (window.getComputedStyle(navbarToggler).display !== 'none') {
-					navbarToggler.click();
-				}
-			});
-		});
-		});
-	</script>
 </html>
