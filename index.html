@@ -72,12 +72,12 @@
 					<em>Pronounced "uh-sheesh"</em> <br/>Assistant Professor of Information Systems at <span class="highlight">Cal Poly</span>
 				</p>
 			</div>
-			<div class="scroll-cue" aria-hidden="true">
-				<svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<button class="scroll-cue" aria-label="Scroll to main content" onclick="document.getElementById('main-content').scrollIntoView({behavior:'smooth'})">
+				<svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 				<path d="M6 7L12 13L18 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 				<path d="M6 13L12 19L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 				</svg>
-			</div>
+			</button>
 		</section>
 		<!-- ================= CONTENT ================= -->
 		<main class="content container ml-3 ml-3" id="main-content">
@@ -118,20 +118,28 @@
 						<div class="affiliation-box affiliation-box-current">
 							<span class="affiliation-box-label-light">Current Affiliation</span>
 							<div class="affiliation-current-logo">
-								<img src="img/logos/cp-logo.png" alt="Cal Poly San Luis Obispo">
+								<a href="https://www.calpoly.edu/" target="_blank">
+									<img src="img/logos/cp-logo-t.png" alt="Cal Poly San Luis Obispo">
+								</a>
 							</div>
 						</div>
 						<div class="affiliation-box affiliation-box-past">
 							<span class="affiliation-box-label">Past Affiliations</span>
 							<div class="affiliation-past-logos">
 								<div class="affiliation-past-logo-slot affiliation-past-logo-slot-gmu">
-									<img src="img/logos/gmu-logo.png" alt="George Mason University">
+									<a href="https://www.gmu.edu/" target="_blank">
+										<img src="img/logos/gmu-logo-t.png" alt="George Mason University">
+									</a>
 								</div>
 								<div class="affiliation-past-logo-slot affiliation-past-logo-slot-cpp">
-									<img src="img/logos/cpp-logo.png" alt="Cal Poly Pomona">
+									<a href="https://www.cpp.edu/" target="_blank">
+										<img src="img/logos/cpp-logo-t.png" alt="Cal Poly Pomona">
+									</a>
 								</div>
 								<div class="affiliation-past-logo-slot affiliation-past-logo-slot-pcc">
-									<img src="img/logos/pcc-logo.png" alt="Pasadena City College">
+									<a href="https://pasadena.edu/" target="_blank">
+										<img src="img/logos/pcc-logo-t.png" alt="Pasadena City College">
+									</a>
 								</div>
 							</div>
 						</div>
