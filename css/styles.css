@@ -252,7 +252,7 @@ a:hover{
 
 /* ===== Page layout: sub-pages ===== */
 .page-header{
-  padding: 14vh 6vw 4vh 6vw;
+  padding: 14vh 6vw 2vh 6vw;
   max-width: 1140px;
   margin: 0 auto;
 }
